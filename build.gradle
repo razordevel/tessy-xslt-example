@@ -5,14 +5,15 @@ import javax.xml.transform.stream.*
 import javax.xml.transform.TransformerFactory
 
 
-task test() {
+class TestXsltTask extends DefaultTask {
 
-	def toXunit = { String inputPath, String xslPath ->
-		def xslt = new File(xslPath).getText()
+	def xslPath = "src/main/xslt/tessy-to-junit.xsl"
+	def xslt = new File(xslPath).getText()
+   def transformer = TransformerFactory.newInstance().newTransformer(new StreamSource(new StringReader(xslt)))
 
-		def transformer = TransformerFactory.newInstance().newTransformer(new StreamSource(new StringReader(xslt)))
+	def toXunit( String inputPath) {
 
-		def  inputFile = new File(inputPath)
+		def inputFile = new File(inputPath)
 		def tessy = inputFile.getText()
 
 		def outputFile = getTemporaryDir().createTempFile("test",".xml")
@@ -24,10 +25,16 @@ task test() {
 		return outputFile
 	}
 
-	doLast {
-	  def output = toXunit("src/test/xslt/allpass/input.xml","src/main/xslt/tessy-to-junit.xsl")
+   @TaskAction
+	def test() {
+	  def output = toXunit("src/test/xslt/allpass/input.xml")
 	}
 }
+
+task test(type: TestXsltTask){
+
+}
+
 
 task wrapper(type: Wrapper) {
     gradleVersion = '4.0'
