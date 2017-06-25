@@ -1,9 +1,20 @@
 
 
 
+
+buildscript {
+	repositories {
+    	mavenCentral()
+	}
+	dependencies {
+		classpath 'org.xmlunit:xmlunit-core:2.3.0'
+	}
+}
+
 import javax.xml.transform.stream.*
 import javax.xml.transform.TransformerFactory
-
+import org.xmlunit.builder.*
+import org.xmlunit.diff.Diff
 
 class TestXsltTask extends DefaultTask {
 
@@ -28,7 +39,20 @@ class TestXsltTask extends DefaultTask {
    @TaskAction
 	def test() {
 	  def output = toXunit("src/test/xslt/allpass/input.xml")
-	}
+
+	  def expectedResult = Input.fromFile("src/test/xslt/allpass/junit-result.xml").build()
+
+	  Diff currentDiff = DiffBuilder.compare(Input.fromFile(output))
+	   		  .normalizeWhitespace()
+              .withTest(expectedResult)
+              .build();
+
+     if(currentDiff.hasDifferences()) {
+		  logger.error currentDiff.toString()
+		  logger.error "Actual output at " + output
+		  throw new GradleException("There is a difference between actual and expected xml output")
+	  }
+  }
 }
 
 task test(type: TestXsltTask){
