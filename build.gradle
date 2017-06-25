@@ -1,0 +1,34 @@
+
+
+
+import javax.xml.transform.stream.*
+import javax.xml.transform.TransformerFactory
+
+
+task test() {
+
+	def toXunit = { String inputPath, String xslPath ->
+		def xslt = new File(xslPath).getText()
+
+		def transformer = TransformerFactory.newInstance().newTransformer(new StreamSource(new StringReader(xslt)))
+
+		def  inputFile = new File(inputPath)
+		def tessy = inputFile.getText()
+
+		def outputFile = getTemporaryDir().createTempFile("test",".xml")
+
+		logger.info("${inputFile } ->  ${outputFile}")
+		def junit = new FileOutputStream(outputFile)
+
+		transformer.transform(new StreamSource(new StringReader(tessy)), new StreamResult(junit))
+		return outputFile
+	}
+
+	doLast {
+	  def output = toXunit("src/test/xslt/allpass/input.xml","src/main/xslt/tessy-to-junit.xsl")
+	}
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '4.0'
+}
