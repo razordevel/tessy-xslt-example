@@ -1,64 +1,135 @@
-
-
-
-
 buildscript {
-	repositories {
-    	mavenCentral()
-	}
-	dependencies {
-		classpath 'org.xmlunit:xmlunit-core:2.3.0'
-	}
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'org.xmlunit:xmlunit-core:2.3.0'
+    }
 }
 
 import javax.xml.transform.stream.*
 import javax.xml.transform.TransformerFactory
 import org.xmlunit.builder.*
 import org.xmlunit.diff.Diff
+import java.nio.file.Path
+import java.nio.file.Paths
 
-class TestXsltTask extends DefaultTask {
+class TestXslt extends DefaultTask {
 
-	def xslPath = "src/main/xslt/tessy-to-junit.xsl"
-	def xslt = new File(xslPath).getText()
-   def transformer = TransformerFactory.newInstance().newTransformer(new StreamSource(new StringReader(xslt)))
+    public static final String SOURCE_FOLDER = "src/main/xslt/"
+    public static final String TESTS_ROOT_FOLDER = 'src/test/xslt/'
+    public static final String TESTS_OUTPUT_ROOT_FOLDER = 'build/xsltOutput/'
+    private String xsltName
+    private File xslt
+    private File outputDir
+    private File testsFolder
 
-	def toXunit( String inputPath) {
+    private javax.xml.transform.Transformer transformer
 
-		def inputFile = new File(inputPath)
-		def tessy = inputFile.getText()
+    String getXsltName() {
+        return xsltName
+    }
 
-		def outputFile = getTemporaryDir().createTempFile("test",".xml")
+    void setXsltName(String xsltName) {
+        this.xsltName = xsltName
+    }
 
-		logger.info("${inputFile } ->  ${outputFile}")
-		def junit = new FileOutputStream(outputFile)
+    @InputFile
+    public File getXslt() {
+        if(xslt == null ){
+            xslt = new File(SOURCE_FOLDER + xsltName)
+        }
+        return xslt
+    }
 
-		transformer.transform(new StreamSource(new StringReader(tessy)), new StreamResult(junit))
-		return outputFile
-	}
+    public void setXslt(File xslt) {
+        this.xslt = xslt
+    }
 
-   @TaskAction
-	def test() {
-	  def output = toXunit("src/test/xslt/allpass/input.xml")
+    @InputDirectory
+    public File getTestsFolder() {
+        if(testsFolder==null){
+            testsFolder = new File(TESTS_ROOT_FOLDER +removeExtension(xsltName))
+        }
+        return testsFolder
+    }
 
-	  def expectedResult = Input.fromFile("src/test/xslt/allpass/junit-result.xml").build()
+    public void setTestsFolder(File testsFolder) {
+        this.testsFolder = testsFolder
+    }
 
-	  Diff currentDiff = DiffBuilder.compare(Input.fromFile(output))
-	   		  .normalizeWhitespace()
-              .withTest(expectedResult)
-              .build();
+    @OutputDirectory
+    public File getOutputDir() {
+        if(outputDir == null){
+            outputDir =  new File(TESTS_OUTPUT_ROOT_FOLDER + removeExtension(xsltName))
+        }
+        return outputDir
+    }
 
-     if(currentDiff.hasDifferences()) {
-		  logger.error currentDiff.toString()
-		  logger.error "Actual output at " + output
-		  throw new GradleException("There is a difference between actual and expected xml output")
-	  }
-  }
+    private String removeExtension(String fileName) {
+        fileName.replaceFirst('[.][^.]+$', '')
+    }
+
+    public void setOutputDir(File outputDir) {
+        this.outputDir = outputDir
+    }
+
+    def targetMapper = {
+        outputDir.toPath().resolve(getTestsFolder().toPath().relativize(it)).getParent().resolve('output.xml')
+    }
+
+
+    def toXunit(File inputFile) {
+        def outputPath = targetMapper(inputFile.toPath())
+
+        def outputFile = outputPath.toFile()
+
+        outputFile.getParentFile().mkdirs()
+
+        def junit = new FileOutputStream(outputFile)
+
+        logger.info "transform ${inputFile} -> ${outputFile}"
+        getTransformer().transform(new StreamSource(new FileReader(inputFile)), new StreamResult(junit))
+        return outputFile
+    }
+
+    def getTransformer() {
+        if (transformer == null) {
+            transformer = TransformerFactory.newInstance().newTransformer(new StreamSource(new FileReader(xslt)))
+        }
+        return transformer
+    }
+
+    def testExample(File exampleDir) {
+        def output = toXunit(exampleDir.toPath().resolve('input.xml').toFile())
+
+        def expectedResult = Input.fromFile(exampleDir.toPath().resolve('junit-result.xml').toFile()).build()
+
+        Diff currentDiff = DiffBuilder.compare(Input.fromFile(output))
+                .normalizeWhitespace()
+                .withTest(expectedResult)
+                .build()
+
+        if (currentDiff.hasDifferences()) {
+            logger.error currentDiff.toString()
+            logger.error "Actual output at " + output
+            throw new GradleException("There is a difference between actual and expected xml output")
+        }
+    }
+
+    @TaskAction
+    def test() {
+        logger.info "use tests from ${testsFolder}: "
+        testsFolder.eachDir { File example ->
+            logger.info "${example.name}: "
+            testExample(example)
+        }
+    }
 }
 
-task test(type: TestXsltTask){
-
+task test(type: TestXslt) {
+    xsltName = 'tessy-to-junit.xsl'
 }
-
 
 task wrapper(type: Wrapper) {
     gradleVersion = '4.0'
