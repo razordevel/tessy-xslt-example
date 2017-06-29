@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<report success="notok" tessy_version="4.0.17" xml_version="3">
+    <statistic notexecuted="0" notok="0" ok="2" total="2">
+        <category count="520" name="ok"/>
+        <category count="1" name="notok"/>
+        <category count="0" name="notexecuted"/>
+    </statistic>
+    <info date="2017-06-28" time="11:18:50+0200"/>
+    <settings>
+        <instrumentation instrumentation_type="None"/>
+        <actions check_interface="true" create_new_testrun="false" execute_test="true" generate_driver="true"/>
+    </settings>
+    <selected_objects>
+        <selected_object name="Testsuite" type="test_collection"/>
+        <selected_object name="Tickets" type="test_collection"/>
+    </selected_objects>
+    <used_environments>
+        <used_environment name="GNU GCC (C++) Eclipse CDT (Default)"/>
+        <used_environment name="GNU GCC Eclipse CDT (Default)"/>
+        <used_environment name="GNU GCC GNU GVD (Default)"/>
+    </used_environments>
+    <tessyobject id="1024" level="0" name="Testsuite" success="notok" type="project">
+        <testcase_statistics notexecuted="0" notok="0" ok="6" success="notok" total="6"/>
+        <tessyobject id="1030" level="1" name="Testsuite" success="notok" type="test_collection">
+            <testcase_statistics notexecuted="0" notok="0" ok="2" success="notok" total="6"/>
+                <tessyobject id="1082" level="3" modulepath="C:\workspaceJenkins\TestSuite\gcc\tessy\work\00000406\00000407\0000043a" name="alias" success="ok" type="module">
+                    <testcase_statistics notexecuted="0" notok="0" ok="4" success="ok" total="4"/>
+                    <tessyobject id="1104" level="4" name="CheckThisOut" number="1" success="ok" type="testobject">
+                        <testcase_statistics notexecuted="0" notok="0" ok="1" success="ok" total="1"/>
+                    </tessyobject>
+                    <tessyobject id="1108" level="4" name="switchAlias" number="2" success="ok" type="testobject">
+                        <testcase_statistics notexecuted="0" notok="0" ok="1" success="ok" total="1"/>
+                    </tessyobject>
+                    <tessyobject id="1106" level="4" name="UseArray" number="3" success="ok" type="testobject">
+                        <testcase_statistics notexecuted="0" notok="0" ok="1" success="ok" total="1"/>
+                    </tessyobject>
+                    <tessyobject id="1110" level="4" name="UseDoubleArray" number="4" success="ok" type="testobject">
+                        <testcase_statistics notexecuted="0" notok="0" ok="1" success="ok" total="1"/>
+                    </tessyobject>
+                </tessyobject>
+                <tessyobject id="1084" level="3" modulepath="C:\workspaceJenkins\TestSuite\gcc\tessy\work\00000406\00000407\0000043c" name="tueren" success="ok" type="module">
+                    <testcase_statistics notexecuted="0" notok="0" ok="2" success="ok" total="2"/>
+                    <tessyobject id="1098" level="4" name="GetTuerState" number="5" success="ok" type="testobject">
+                        <testcase_statistics notexecuted="0" notok="0" ok="1" success="ok" total="1"/>
+                    </tessyobject>
+                    <tessyobject id="1114" level="4" name="SetTuerState_vr" number="6" success="ok" type="testobject">
+                        <testcase_statistics notexecuted="0" notok="0" ok="1" success="ok" total="1"/>
+                    </tessyobject>
+                </tessyobject>
+
+        </tessyobject>
+
+    </tessyobject>
+</report>

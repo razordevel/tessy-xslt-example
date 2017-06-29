@@ -4,6 +4,10 @@ task test(type: TestXslt) {
     xsltName = 'tessy-to-junit.xsl'
 }
 
+task testOverview(type: TestXslt) {
+    xsltName = 'tessy-overview-to-junit.xsl'
+}
+
 task wrapper(type: Wrapper) {
     gradleVersion = '4.0'
 }

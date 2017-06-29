@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuites tests="2" failures="0" skipped="0" timestamp="2017-06-28T11:18:50+0200">
+<testsuite name="Testsuite" tests="6" failures="0" skipped="0">
+<testsuite name="Testsuite.alias" tests="4" failures="0" skipped="0">
+<testcase name="CheckThisOut" tests="1" failures="0" skipped="0"/>
+<testcase name="switchAlias" tests="1" failures="0" skipped="0"/>
+<testcase name="UseArray" tests="1" failures="0" skipped="0"/>
+<testcase name="UseDoubleArray" tests="1" failures="0" skipped="0"/>
+</testsuite>
+<testsuite name="Testsuite.tueren" tests="2" failures="0" skipped="0">
+<testcase name="GetTuerState" tests="1" failures="0" skipped="0"/>
+<testcase name="SetTuerState_vr" tests="1" failures="0" skipped="0"/>
+</testsuite>
+</testsuite>
+</testsuites>
