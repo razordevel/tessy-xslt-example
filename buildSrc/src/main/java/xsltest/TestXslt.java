@@ -139,6 +139,15 @@ public class TestXslt extends DefaultTask {
         File expectedXml = exampleDir.toPath()
                                      .resolve("expected.xml")
                                      .toFile();
+        try {
+            Files.copy(expectedXml.toPath(),
+                       output.getParentFile()
+                             .toPath()
+                             .resolve(expectedXml.getName()),
+                       REPLACE_EXISTING);
+        } catch (IOException e) {
+            throw new UncheckedIOException(e);
+        }
         Diff currentDiff = DiffBuilder.compare(Input.fromFile(output))
                                       .normalizeWhitespace()
                                       .withTest(Input.fromFile(expectedXml))
