@@ -8,6 +8,12 @@ task testOverview(type: TestXslt) {
     xsltName = 'tessy-overview-to-junit.xsl'
 }
 
+task testAllXslt() {
+    dependsOn  {
+          tasks.findAll { it instanceof TestXslt }
+    }
+}
+
 task wrapper(type: Wrapper) {
     gradleVersion = '4.0'
 }
