@@ -1,7 +1,7 @@
 import xsltest.*
 
-task test(type: TestXslt) {
-    xsltName = 'tessy-to-junit.xsl'
+task testDetail(type: TestXslt) {
+    xsltName = 'tessy-detail-to-junit.xsl'
 }
 
 task testOverview(type: TestXslt) {
