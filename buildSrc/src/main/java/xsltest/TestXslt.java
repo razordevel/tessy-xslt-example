@@ -161,6 +161,8 @@ public class TestXslt extends DefaultTask {
               .append(lineSeparator())
               .append(currentDiff.toString())
               .append(lineSeparator())
+              .append("Expected output at " + expectedXml.getAbsolutePath())
+              .append(lineSeparator())
               .append("Actual output at " + output.getAbsolutePath())
               .append(lineSeparator());
             getLogger().error(sb.toString());
