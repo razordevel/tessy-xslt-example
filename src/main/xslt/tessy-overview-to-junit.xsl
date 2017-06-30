@@ -41,19 +41,19 @@ THE SOFTWARE.
     <xsl:attribute name="name" ><xsl:value-of select="@name" /></xsl:attribute>
   </xsl:attribute-set>
   <xsl:attribute-set name="name_concat_last2">
-    <xsl:attribute name="name" ><xsl:value-of select="concat(../@name,'.',@name)" /></xsl:attribute>
+    <xsl:attribute name="name" ><xsl:value-of select="concat(../@name,'/',@name)" /></xsl:attribute>
   </xsl:attribute-set>
 
   <xsl:attribute-set name="name_concat_last3">
-    <xsl:attribute name="name" ><xsl:value-of select="concat(../../@name,'.',../@name,'.',@name)" /></xsl:attribute>
+    <xsl:attribute name="name" ><xsl:value-of select="concat(../../@name,'/',../@name,'/',@name)" /></xsl:attribute>
   </xsl:attribute-set>
 
   <xsl:attribute-set name="name_concat_last4">
-    <xsl:attribute name="name" ><xsl:value-of select="concat(../../@name,'.',../../@name,'.',../@name,'.',@name)" /></xsl:attribute>
+    <xsl:attribute name="name" ><xsl:value-of select="concat(../../@name,'/',../../@name,'/',../@name,'/',@name)" /></xsl:attribute>
   </xsl:attribute-set>
 
   <xsl:attribute-set name="name_concat_last5">
-    <xsl:attribute name="name" ><xsl:value-of select="concat(../../@name,'.',../../@name,'.',../../@name,'.',../@name,'.',@name)" /></xsl:attribute>
+    <xsl:attribute name="name" ><xsl:value-of select="concat(../../@name,'/',../../@name,'/',../../@name,'/',../@name,'/',@name)" /></xsl:attribute>
   </xsl:attribute-set>
 
   <xsl:template match="report">
