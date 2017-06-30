@@ -36,24 +36,28 @@ THE SOFTWARE.
     <xsl:attribute name="failures" ><xsl:value-of select="testcase_statistics/@notok" /></xsl:attribute>
     <xsl:attribute name="skipped" ><xsl:value-of select="testcase_statistics/@notexecuted" /></xsl:attribute>
   </xsl:attribute-set>
-
+  <!--
+    Jenkins interprets . as separator in a Java method path.
+    This means the last point separates the test method from the test class.
+    The second last point separates the classname from the package name.
+  -->
   <xsl:attribute-set name="name_simple">
     <xsl:attribute name="name" ><xsl:value-of select="@name" /></xsl:attribute>
   </xsl:attribute-set>
   <xsl:attribute-set name="name_concat_last2">
-    <xsl:attribute name="name" ><xsl:value-of select="concat(../@name,'/',@name)" /></xsl:attribute>
+    <xsl:attribute name="name" ><xsl:value-of select="concat(../@name,'.',@name)" /></xsl:attribute>
   </xsl:attribute-set>
 
   <xsl:attribute-set name="name_concat_last3">
-    <xsl:attribute name="name" ><xsl:value-of select="concat(../../@name,'/',../@name,'/',@name)" /></xsl:attribute>
+    <xsl:attribute name="name" ><xsl:value-of select="concat(../../@name,'.',../@name,'.',@name)" /></xsl:attribute>
   </xsl:attribute-set>
 
   <xsl:attribute-set name="name_concat_last4">
-    <xsl:attribute name="name" ><xsl:value-of select="concat(../../@name,'/',../../@name,'/',../@name,'/',@name)" /></xsl:attribute>
+    <xsl:attribute name="name" ><xsl:value-of select="concat(../../@name,'.',../../@name,'.',../@name,'.',@name)" /></xsl:attribute>
   </xsl:attribute-set>
 
   <xsl:attribute-set name="name_concat_last5">
-    <xsl:attribute name="name" ><xsl:value-of select="concat(../../@name,'/',../../@name,'/',../../@name,'/',../@name,'/',@name)" /></xsl:attribute>
+    <xsl:attribute name="name" ><xsl:value-of select="concat(../../@name,'.',../../@name,'.',../../@name,'.',../@name,'.',@name)" /></xsl:attribute>
   </xsl:attribute-set>
 
   <xsl:template match="report">
