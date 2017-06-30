@@ -83,11 +83,21 @@ THE SOFTWARE.
       <xsl:value-of select="/report/summary/info/@project_name"/>.<xsl:value-of select="/report/summary/info/@module_name"/>
   </xsl:template>
   <xsl:template name="attachments">
-	  <xsl:if test="$filename!=''">
-<system-out>
-  [[ATTACHMENT|<xsl:value-of select="$filename" />]]
-  [[ATTACHMENT|<xsl:value-of select="substring-before($filename,'.xml')" />.pdf]]
-</system-out>
+    <xsl:if test="$filename!=''">
+      <xsl:choose>
+        <xsl:when test="$filedir!=''">
+          <system-out>
+            [[ATTACHMENT|<xsl:value-of select="concat($filedir, '/', $filename)" />]]
+            [[ATTACHMENT|<xsl:value-of select="concat($filedir, '/',substring-before($filename,'.xml'))" />.pdf]]
+          </system-out>
+        </xsl:when>
+        <xsl:otherwise>
+          <system-out>
+           [[ATTACHMENT|<xsl:value-of select="$filename" />]]
+           [[ATTACHMENT|<xsl:value-of select="substring-before($filename,'.xml')" />.pdf]]
+          </system-out>
+       </xsl:otherwise>
+     </xsl:choose>
      </xsl:if>
   </xsl:template>
 </xsl:stylesheet>
