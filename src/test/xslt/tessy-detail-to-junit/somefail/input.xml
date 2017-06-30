@@ -1,0 +1,229 @@
+<report xml_version="3" tessy_version="4.0.15" testobject_name="is_value_in_range" testobject_uuid="2f7898b2-a102-4034-bf6e-a32a6955944f" success="notok">
+	<summary>
+		<info project_name="Value_In_Range" module_name="IsValueInRange" module_uuid="c0d6f821-21a1-4db6-aca1-9fd0c9406baa" testobject_name="is_value_in_range" testobject_uuid="2f7898b2-a102-4034-bf6e-a32a6955944f" cte_file="true" date="2017-06-30" time="09:26:41+0200" user="Sadau" host="dmanthey-pc2014"/>
+		<cte>
+			<cte_file file="Iw0KIyBDVEUtRmlsZSBnZW5lcmF0ZWQgYnkgQ1RFIFZlcnNpb24gMy4yLjANCiMNCg0KRmlsZSBWZXJzaW9uICAgOiAyLjQwDQpBdXRob3IgICAgICAgICA6ICJBZG1pbmlzdHJhdG9yIg0KQ3JlYXRlZCAgICAgICAgOiAyOS4xMC4yMDAyIDE4OjEwDQpMYXN0IENoYW5nZWQgICA6IDI2LjA0LjIwMTcgMTI6MzQNClZlcnNpb24gICAgICAgIDogMS4xOA0KRnJhbWUgRm9udCAgICAgOiAiQXJpYWwsMTEsMCwwLDQwMCwwLDAsMCwxIg0KVGVzdGNhc2UgRm9udCAgOiAiQXJpYWwsMTIsMCwwLDcwMCwwLDAsMCwxIg0KDQpGcmFtZQ0KICBJZCAgICAgICAgICAgICAgIDogMA0KICBQb3NpdGlvbiAgICAgICAgIDogMCwgMA0KICBTaXplICAgICAgICAgICAgIDogMCwgMA0KICBGb250ICAgICAgICAgICAgIDogIkFyaWFsLDksMCwwLDQwMCw0OSwwLDAsMSINCiAgUGFwZXJTaXplICAgICAgICA6IERJTi1BNA0KICBQYXBlck9yaWVudGF0aW9uIDogTGFuZHNjYXBlDQogIFN0YXRlICAgICAgICAgICAgOiBab29tZWQNCiAgTGF5b3V0ICAgICAgICAgICA6IDEyLCA1Nw0KDQogIEVsZW1lbnQNCiAgICBUeXBlIDogQ29tbWVudA0KICAgIElkIDogMjANCiAgICBQYXJlbnRJZCA6IC0xDQogICAgTmFtZSA6ICJUaGlzIGV4YW1wbGUgd2FzIG9yaWdpbmFsbHlcclxuIg0KICAgICAgICAgICAiY3JlYXRlZCBieSBGcmFuayBC/GNobmVyLCBIaXRleC4iDQogICAgVHJhbnNpdGlvblJvb3QgOiBObw0KICAgIFBvc2l0aW9uIDogMjQsIDkNCiAgRW5kDQoNCiAgRWxlbWVudA0KICAgIFR5cGUgOiBJbmZvcm1hdGlvbg0KICAgIElkIDogMjENCiAgICBQYXJlbnRJZCA6IC0xDQogICAgTmFtZSA6ICIkQSRWJEQkTCRDIg0KICAgIERlc2NyaXB0aW9uIDogImFhIg0KICAgIFNwZWNpZmljYXRpb24gOiAiYmIiDQogICAgVHJhbnNpdGlvblJvb3QgOiBObw0KICAgIFBvc2l0aW9uIDogOTQsIDM3OQ0KICBFbmQNCg0KICBFbGVtZW50DQogICAgVHlwZSA6IFJvb3QNCiAgICBJZCA6IDENCiAgICBQYXJlbnRJZCA6IC0xDQogICAgTmFtZSA6ICJpc192YWx1ZV9pbl9yYW5nZSINCiAgICBUcmFuc2l0aW9uUm9vdCA6IE5vDQogICAgQmVnaW4NCiAgICAgICJNb2R1bGUiIDogIklzVmFsdWVJblJhbmdlIiwNCiAgICAgICJQcm9qZWN0IiA6ICJfU2FtcGxlIiwNCiAgICAgICJUZXN0b2JqZWN0IiA6ICJpc192YWx1ZV9pbl9yYW5nZSINCiAgICBFbmQNCiAgICBQb3NpdGlvbiA6IDI1NCwgODUNCiAgRW5kDQoNCiAgRWxlbWVudA0KICAgIFR5cGUgOiBDbGFzc2lmaWNhdGlvbg0KICAgIElkIDogMg0KICAgIFBhcmVudElkIDogMQ0KICAgIE5hbWUgOiAiUmFuZ2UgU3RhcnQiDQogICAgVHJhbnNpdGlvblJvb3QgOiBObw0KICAgIFBvc2l0aW9uIDogNTksIDEyNQ0KICAgIEJrQ29sb3IgOiAweDAwODBGRkZGDQogIEVuZA0KDQogIEVsZW1lbnQNCiAgICBUeXBlIDogQ2xhc3MNCiAgICBJZCA6IDMNCiAgICBQYXJlbnRJZCA6IDINCiAgICBOYW1lIDogIlBvc2l0aXZlIg0KICAgIFRyYW5zaXRpb25Sb290IDogTm8NCiAgICBQb3NpdGlvbiA6IDM2LCAxNjUNCiAgRW5kDQoNCiAgRWxlbWVudA0KICAgIFR5cGUgOiBDbGFzcw0KICAgIElkIDogNA0KICAgIFBhcmVudElkIDogMg0KICAgIE5hbWUgOiAiWmVybyINCiAgICBUcmFuc2l0aW9uUm9vdCA6IE5vDQogICAgUG9zaXRpb24gOiA4MiwgMTg1DQogIEVuZA0KDQogIEVsZW1lbnQNCiAgICBUeXBlIDogQ2xhc3MNCiAgICBJZCA6IDUNCiAgICBQYXJlbnRJZCA6IDINCiAgICBOYW1lIDogIk5lZ2F0aXZlIg0KICAgIFRyYW5zaXRpb25Sb290IDogTm8NCiAgICBQb3NpdGlvbiA6IDEwMywgMTY1DQogIEVuZA0KDQogIEVsZW1lbnQNCiAgICBUeXBlIDogQ2xhc3NpZmljYXRpb24NCiAgICBJZCA6IDYNCiAgICBQYXJlbnRJZCA6IDENCiAgICBOYW1lIDogIlJhbmdlIExlbmd0aCINCiAgICBUcmFuc2l0aW9uUm9vdCA6IE5vDQogICAgUG9zaXRpb24gOiAxOTAsIDEyNQ0KICAgIEJrQ29sb3IgOiAweDAwODBGRkZGDQogIEVuZA0KDQogIEVsZW1lbnQNCiAgICBUeXBlIDogQ2xhc3MNCiAgICBJZCA6IDcNCiAgICBQYXJlbnRJZCA6IDYNCiAgICBOYW1lIDogIlBvc2l0aXZlIg0KICAgIFRyYW5zaXRpb25Sb290IDogTm8NCiAgICBQb3NpdGlvbiA6IDE3MiwgMTY1DQogIEVuZA0KDQogIEVsZW1lbnQNCiAgICBUeXBlIDogQ2xhc3MNCiAgICBJZCA6IDgNCiAgICBQYXJlbnRJZCA6IDYNCiAgICBOYW1lIDogIlplcm8iDQogICAgVHJhbnNpdGlvblJvb3QgOiBObw0KICAgIFBvc2l0aW9uIDogMjIyLCAyMDANCiAgRW5kDQoNCiAgRWxlbWVudA0KICAgIFR5cGUgOiBDbGFzcw0KICAgIElkIDogOQ0KICAgIFBhcmVudElkIDogNg0KICAgIE5hbWUgOiAiTmVnYXRpdmUiDQogICAgVHJhbnNpdGlvblJvb3QgOiBObw0KICAgIFBvc2l0aW9uIDogMjM5LCAxNjUNCiAgRW5kDQoNCiAgRWxlbWVudA0KICAgIFR5cGUgOiBDbGFzc2lmaWNhdGlvbg0KICAgIElkIDogMTANCiAgICBQYXJlbnRJZCA6IDENCiAgICBOYW1lIDogIlBvc2l0aW9uIg0KICAgIFRyYW5zaXRpb25Sb290IDogTm8NCiAgICBQb3NpdGlvbiA6IDQzNywgMTI1DQogICAgQmtDb2xvciA6IDB4MDA4MEZGODANCiAgRW5kDQoNCiAgRWxlbWVudA0KICAgIFR5cGUgOiBDbGFzcw0KICAgIElkIDogMTENCiAgICBQYXJlbnRJZCA6IDEwDQogICAgTmFtZSA6ICJJbnNpZGUiDQogICAgVHJhbnNpdGlvblJvb3QgOiBObw0KICAgIFBvc2l0aW9uIDogMzY5LCAxNjUNCiAgRW5kDQoNCiAgRWxlbWVudA0KICAgIFR5cGUgOiBDbGFzc2lmaWNhdGlvbg0KICAgIElkIDogMTMNCiAgICBQYXJlbnRJZCA6IDExDQogICAgTmFtZSA6ICJQb3NpdGlvblxyXG4iDQogICAgICAgICAgICJpbiBSYW5nZSINCiAgICBUcmFuc2l0aW9uUm9vdCA6IE5vDQogICAgUG9zaXRpb24gOiAzNjEsIDIwNQ0KICBFbmQNCg0KICBFbGVtZW50DQogICAgVHlwZSA6IENsYXNzDQogICAgSWQgOiAxNA0KICAgIFBhcmVudElkIDogMTMNCiAgICBOYW1lIDogIk1pZGRsZSINCiAgICBUcmFuc2l0aW9uUm9vdCA6IE5vDQogICAgUG9zaXRpb24gOiAzMDgsIDI2MA0KICBFbmQNCg0KICBFbGVtZW50DQogICAgVHlwZSA6IENsYXNzDQogICAgSWQgOiAxNQ0KICAgIFBhcmVudElkIDogMTMNCiAgICBOYW1lIDogIkxvd2VyIEJvcmRlciINCiAgICBUcmFuc2l0aW9uUm9vdCA6IE5vDQogICAgUG9zaXRpb24gOiAzMzAsIDI4MA0KICBFbmQNCg0KICBFbGVtZW50DQogICAgVHlwZSA6IENsYXNzDQogICAgSWQgOiAxNg0KICAgIFBhcmVudElkIDogMTMNCiAgICBOYW1lIDogIlVwcGVyIEJvcmRlciINCiAgICBUcmFuc2l0aW9uUm9vdCA6IE5vDQogICAgUG9zaXRpb24gOiAzOTAsIDI2MA0KICBFbmQNCg0KICBFbGVtZW50DQogICAgVHlwZSA6IENsYXNzDQogICAgSWQgOiAxMg0KICAgIFBhcmVudElkIDogMTANCiAgICBOYW1lIDogIk91dHNpZGUiDQogICAgVHJhbnNpdGlvblJvb3QgOiBObw0KICAgIFBvc2l0aW9uIDogNTA3LCAxNjUNCiAgRW5kDQoNCiAgRWxlbWVudA0KICAgIFR5cGUgOiBDbGFzc2lmaWNhdGlvbg0KICAgIElkIDogMTcNCiAgICBQYXJlbnRJZCA6IDEyDQogICAgTmFtZSA6ICJXaGVyZSA/Ig0KICAgIFRyYW5zaXRpb25Sb290IDogTm8NCiAgICBQb3NpdGlvbiA6IDUwNiwgMjA1DQogIEVuZA0KDQogIEVsZW1lbnQNCiAgICBUeXBlIDogQ2xhc3MNCiAgICBJZCA6IDE4DQogICAgUGFyZW50SWQgOiAxNw0KICAgIE5hbWUgOiAiQWJvdmUiDQogICAgVHJhbnNpdGlvblJvb3QgOiBObw0KICAgIFBvc2l0aW9uIDogNDg1LCAyNDUNCiAgRW5kDQoNCiAgRWxlbWVudA0KICAgIFR5cGUgOiBDbGFzcw0KICAgIElkIDogMTkNCiAgICBQYXJlbnRJZCA6IDE3DQogICAgTmFtZSA6ICJCZWxvdyINCiAgICBUcmFuc2l0aW9uUm9vdCA6IE5vDQogICAgUG9zaXRpb24gOiA1NDAsIDI0NQ0KICBFbmQNCkVuZA0KDQpUZXN0Q2FzZQ0KICBJZCA6IDENCiAgRmxhZyA6IE5vDQogIFN0YXRlIDogTm9uZQ0KICBOYW1lIDogIlNpbXBsZSINCiAgRGVzY3JpcHRpb24gOiAiVGhlIG5vcm1hbCBjb21iaW5hdGlvbnMgdXNpbmcgcG9zaXRpdmUgbnVtYmVycyBmb3IgcmFuZ2UgYW5kIHBvc2l0aW9uLiINCiAgTWFya3MNCiAgICBNYXJrDQogICAgICBJZCA6IDMNCiAgICAgIFR5cGUgOiBTb2xpZENpcmNsZQ0KICAgIEVuZA0KICAgIE1hcmsNCiAgICAgIElkIDogNw0KICAgICAgVHlwZSA6IFNvbGlkQ2lyY2xlDQogICAgRW5kDQogICAgTWFyaw0KICAgICAgSWQgOiAxNA0KICAgICAgVHlwZSA6IFNvbGlkQ2lyY2xlDQogICAgRW5kDQogIEVuZA0KRW5kDQoNClRlc3RDYXNlDQogIElkIDogMg0KICBGbGFnIDogTm8NCiAgU3RhdGUgOiBOb25lDQogIE5hbWUgOiAiIg0KICBNYXJrcw0KICAgIE1hcmsNCiAgICAgIElkIDogMw0KICAgICAgVHlwZSA6IFNvbGlkQ2lyY2xlDQogICAgRW5kDQogICAgTWFyaw0KICAgICAgSWQgOiA3DQogICAgICBUeXBlIDogU29saWRDaXJjbGUNCiAgICBFbmQNCiAgICBNYXJrDQogICAgICBJZCA6IDE4DQogICAgICBUeXBlIDogU29saWRDaXJjbGUNCiAgICBFbmQNCiAgRW5kDQpFbmQNCg0KVGVzdENhc2UNCiAgSWQgOiAzDQogIEZsYWcgOiBObw0KICBTdGF0ZSA6IE5vbmUNCiAgTmFtZSA6ICIiDQogIE1hcmtzDQogICAgTWFyaw0KICAgICAgSWQgOiA0DQogICAgICBUeXBlIDogU29saWRDaXJjbGUNCiAgICBFbmQNCiAgICBNYXJrDQogICAgICBJZCA6IDcNCiAgICAgIFR5cGUgOiBTb2xpZENpcmNsZQ0KICAgIEVuZA0KICAgIE1hcmsNCiAgICAgIElkIDogMTYNCiAgICAgIFR5cGUgOiBTb2xpZENpcmNsZQ0KICAgIEVuZA0KICBFbmQNCkVuZA0KDQpUZXN0Q2FzZQ0KICBJZCA6IDQNCiAgRmxhZyA6IE5vDQogIFN0YXRlIDogTm9uZQ0KICBOYW1lIDogIiINCiAgTWFya3MNCiAgICBNYXJrDQogICAgICBJZCA6IDUNCiAgICAgIFR5cGUgOiBTb2xpZENpcmNsZQ0KICAgIEVuZA0KICAgIE1hcmsNCiAgICAgIElkIDogNw0KICAgICAgVHlwZSA6IFNvbGlkQ2lyY2xlDQogICAgRW5kDQogICAgTWFyaw0KICAgICAgSWQgOiAxNQ0KICAgICAgVHlwZSA6IFNvbGlkQ2lyY2xlDQogICAgRW5kDQogIEVuZA0KRW5kDQoNClRlc3RDYXNlDQogIElkIDogNQ0KICBGbGFnIDogTm8NCiAgU3RhdGUgOiBOb25lDQogIE5hbWUgOiAiTGVuZ3RoPTAiDQogIERlc2NyaXB0aW9uIDogIlNwZWNpYWwgY2FzZTogTGVuZ3RoIG9mIHJhbmdlIGVxdWFscyB6ZXJvLiINCiAgTWFya3MNCiAgICBNYXJrDQogICAgICBJZCA6IDE4DQogICAgICBUeXBlIDogU29saWRDaXJjbGUNCiAgICBFbmQNCiAgICBNYXJrDQogICAgICBJZCA6IDMNCiAgICAgIFR5cGUgOiBTb2xpZENpcmNsZQ0KICAgIEVuZA0KICAgIE1hcmsNCiAgICAgIElkIDogOA0KICAgICAgVHlwZSA6IFNvbGlkQ2lyY2xlDQogICAgRW5kDQogIEVuZA0KRW5kDQoNClRlc3RDYXNlDQogIElkIDogNg0KICBGbGFnIDogTm8NCiAgU3RhdGUgOiBOb25lDQogIE5hbWUgOiAiIg0KICBNYXJrcw0KICAgIE1hcmsNCiAgICAgIElkIDogMTkNCiAgICAgIFR5cGUgOiBTb2xpZENpcmNsZQ0KICAgIEVuZA0KICAgIE1hcmsNCiAgICAgIElkIDogNA0KICAgICAgVHlwZSA6IFNvbGlkQ2lyY2xlDQogICAgRW5kDQogICAgTWFyaw0KICAgICAgSWQgOiA4DQogICAgICBUeXBlIDogU29saWRDaXJjbGUNCiAgICBFbmQNCiAgRW5kDQpFbmQNCg0KVGVzdENhc2UNCiAgSWQgOiA3DQogIEZsYWcgOiBObw0KICBTdGF0ZSA6IE5vbmUNCiAgTmFtZSA6ICIiDQogIE1hcmtzDQogICAgTWFyaw0KICAgICAgSWQgOiAxNA0KICAgICAgVHlwZSA6IFNvbGlkQ2lyY2xlDQogICAgRW5kDQogICAgTWFyaw0KICAgICAgSWQgOiA1DQogICAgICBUeXBlIDogU29saWRDaXJjbGUNCiAgICBFbmQNCiAgICBNYXJrDQogICAgICBJZCA6IDgNCiAgICAgIFR5cGUgOiBTb2xpZENpcmNsZQ0KICAgIEVuZA0KICBFbmQNCkVuZA0KDQpUZXN0Q2FzZQ0KICBJZCA6IDgNCiAgRmxhZyA6IE5vDQogIFN0YXRlIDogTm9uZQ0KICBOYW1lIDogIlNwZWNpYWwiDQogIERlc2NyaXB0aW9uIDogIk1vcmUgc29waGlzdGljYXRlZCB0ZXN0cy4iDQogIE1hcmtzDQogICAgTWFyaw0KICAgICAgSWQgOiAzDQogICAgICBUeXBlIDogU29saWRDaXJjbGUNCiAgICBFbmQNCiAgICBNYXJrDQogICAgICBJZCA6IDkNCiAgICAgIFR5cGUgOiBTb2xpZENpcmNsZQ0KICAgIEVuZA0KICAgIE1hcmsNCiAgICAgIElkIDogMTQNCiAgICAgIFR5cGUgOiBTb2xpZENpcmNsZQ0KICAgIEVuZA0KICBFbmQNCkVuZA0KDQpUZXN0Q2FzZQ0KICBJZCA6IDkNCiAgRmxhZyA6IE5vDQogIFN0YXRlIDogTm9uZQ0KICBOYW1lIDogIiINCiAgTWFya3MNCiAgICBNYXJrDQogICAgICBJZCA6IDUNCiAgICAgIFR5cGUgOiBTb2xpZENpcmNsZQ0KICAgIEVuZA0KICAgIE1hcmsNCiAgICAgIElkIDogOQ0KICAgICAgVHlwZSA6IFNvbGlkQ2lyY2xlDQogICAgRW5kDQogICAgTWFyaw0KICAgICAgSWQgOiAxNg0KICAgICAgVHlwZSA6IFNvbGlkQ2lyY2xlDQogICAgRW5kDQogIEVuZA0KRW5kDQoNClRlc3RDYXNlDQogIElkIDogMTANCiAgRmxhZyA6IE5vDQogIFN0YXRlIDogTm9uZQ0KICBOYW1lIDogIiINCiAgTWFya3MNCiAgICBNYXJrDQogICAgICBJZCA6IDQNCiAgICAgIFR5cGUgOiBTb2xpZENpcmNsZQ0KICAgIEVuZA0KICAgIE1hcmsNCiAgICAgIElkIDogOQ0KICAgICAgVHlwZSA6IFNvbGlkQ2lyY2xlDQogICAgRW5kDQogICAgTWFyaw0KICAgICAgSWQgOiAxOA0KICAgICAgVHlwZSA6IFNvbGlkQ2lyY2xlDQogICAgRW5kDQogIEVuZA0KRW5k"/>
+			<cte_data>
+				<cte_node id="1">
+					<inputs>
+					</inputs>
+					<results>
+					</results>
+				</cte_node>
+				<cte_node id="2">
+					<inputs>
+					</inputs>
+					<results>
+					</results>
+				</cte_node>
+				<cte_node id="3">
+					<inputs>
+					</inputs>
+					<results>
+					</results>
+				</cte_node>
+				<cte_node id="4">
+					<inputs>
+					</inputs>
+					<results>
+					</results>
+				</cte_node>
+				<cte_node id="5">
+					<inputs>
+					</inputs>
+					<results>
+					</results>
+				</cte_node>
+				<cte_node id="6">
+					<inputs>
+					</inputs>
+					<results>
+					</results>
+				</cte_node>
+				<cte_node id="7">
+					<inputs>
+					</inputs>
+					<results>
+					</results>
+				</cte_node>
+				<cte_node id="8">
+					<inputs>
+					</inputs>
+					<results>
+					</results>
+				</cte_node>
+				<cte_node id="9">
+					<inputs>
+					</inputs>
+					<results>
+					</results>
+				</cte_node>
+			</cte_data>
+		</cte>
+		<comments>
+		</comments>
+		<statistic total="10" ok="7" ok_list="1.1;3.1;4.1;5.1;6.1;7.1;9.1" notok="3" notok_list="2.1;8.1;10.1" notexecuted="0" notexecuted_list=""/>
+<interface>
+<mod id="0d668a89-51db-44ef-a265-fa6dd871ab1e" lid="8" opt="7" ver="19">
+<funcs>
+<func id="2" nam="is_value_in_range" scp="2" src="1"/>
+</funcs>
+<types>
+<enum id="1" nam="TESSYTAG_result" src="1" tmd="0x20000000000" ttg="1">
+<comp id="1" nam="no" val="0" vdf="2"/>
+<comp id="2" nam="yes" val="1" vdf="2"/>
+</enum>
+<typedef id="2" nam="result" trf="1"/>
+<struct id="3" nam="range" src="1">
+<comp id="1" nam="range_start" tc="10" tmd="0x800000000000000"/>
+<comp id="2" nam="range_len" tc="10" tmd="0x800000000000000"/>
+</struct>
+</types>
+<vars/>
+</mod>
+<funcs>
+<func id="2" nam="is_value_in_range">
+<ret id="3" ips="4" pas="4" tc="15" trf="2"/>
+<parms>
+<parm id="4" ips="2" nam="r1" pas="2" tc="27" trf="3">
+<comp id="1" ips="2" pas="2"/>
+<comp id="2" ips="2" pas="2"/>
+</parm>
+<parm id="7" ips="2" nam="v1" pas="2" tc="10" tmd="0x800000000000000"/>
+</parms>
+</func>
+</funcs>
+</interface>
+		<properties directory="C:\Users\Sadau\Projects\TESSY\Value_In_Range\tessy\work\00000734\0000074c" config="$(PROJECTROOT)\tessy\config\configuration.xml" project_root="C:\Users\Sadau\Projects\TESSY\Value_In_Range" project_description="" environment="GNU GCC Eclipse CDT (Default)" kind_of_test="UNIT">
+			<source file="C:\Program Files (x86)\Razorcat\TESSY_4.0\Examples\CommandLine\..\IsValueInRange\is_val_in_range.c" cvs_revision="1" sha1="91eddde73591777d76ad35ea6a218902fd5d52ef"/>
+		</properties>
+		<attributes>
+			<attribute name="CTE File" value="$(PROJECTROOT)\tessy\persist\tessy\project\00000734\0000074c\.database\.tdb\0000074D\is_value_in_range.cte"/>
+			<attribute name="CTEX File" value="$(PROJECTROOT)\tessy\persist\tessy\project\00000734\0000074c\.database\.tdb\0000074D\is_value_in_range.ctex"/>
+		</attributes>
+	</summary>
+	<module>
+	</module>
+	<testobject success="notok">
+		<testcase id="1" uuid="79ac3147-4905-4ede-9e0d-0725ee269819" dbid="1871" specification="- Position:Inside&#10;  - Position in Range:Middle&#10;- Range Length:Positive&#10;  - Instances:20&#10;- Range Start:Positive&#10;  - Instances:10&#10;- Values:15" success="ok" testdata_success="ok">
+<teststep id="1.1" uuid="d25a041d-2d69-4c26-a09e-13595e34a356" dbid="1872" success="ok" testdata_success="ok" repeat_count="1">
+	<inputs>
+		<input name="r1.range_start" unit="" id="5" value="10" use="1"/>
+		<input name="r1.range_len" unit="" id="6" value="20" use="1"/>
+		<input name="v1" unit="" id="7" value="15" use="1"/>
+	</inputs>
+	<results>
+		<result name="is_value_in_range()" unit="" id="3" expected_value="yes" actual_value="yes" success="ok" use="1"/>
+	</results>
+</teststep>
+		</testcase>
+		<testcase id="2" uuid="4ad6c310-c24f-4aed-9cd7-017e454cb41c" dbid="1873" specification="- Range Length:Positive&#10;  - Instances:5&#10;- Range Start:Positive&#10;  - Instances:3&#10;- Values:20" success="notok" testdata_success="notok">
+<teststep id="2.1" uuid="4755f4fd-84bd-46e5-8052-2ae4118b8039" dbid="1874" success="notok" testdata_success="notok" repeat_count="1">
+	<inputs>
+		<input name="r1.range_start" unit="" id="5" value="3" use="1"/>
+		<input name="r1.range_len" unit="" id="6" value="5" use="1"/>
+		<input name="v1" unit="" id="7" value="20" use="1"/>
+	</inputs>
+	<results>
+		<result name="is_value_in_range()" unit="" id="3" expected_value="-" actual_value="no" success="notok" use="1"/>
+	</results>
+</teststep>
+		</testcase>
+		<testcase id="3" uuid="96c00117-43ca-49ce-8a79-92b782f963ce" dbid="1875" specification="- Position:Inside&#10;  - Position in Range:Upper Border&#10;- Range Length:Positive&#10;  - Instances:5&#10;- Range Start:Zero&#10;- Values:5" success="ok" testdata_success="ok">
+<teststep id="3.1" uuid="c05989e0-9ae0-44e5-a9bb-3026dd45e05c" dbid="1876" success="ok" testdata_success="ok" repeat_count="1">
+	<inputs>
+		<input name="r1.range_start" unit="" id="5" value="0" use="1"/>
+		<input name="r1.range_len" unit="" id="6" value="5" use="1"/>
+		<input name="v1" unit="" id="7" value="5" use="1"/>
+	</inputs>
+	<results>
+		<result name="is_value_in_range()" unit="" id="3" expected_value="yes" actual_value="yes" success="ok" use="1"/>
+	</results>
+</teststep>
+		</testcase>
+		<testcase id="4" uuid="5434679c-ab77-4bc9-b922-83de86f14b19" dbid="1877" specification="- Position:Inside&#10;  - Position in Range:Lower Border&#10;- Range Length:Positive&#10;  - Instances:10&#10;- Range Start:Negative&#10;  - Instances:-13&#10;- Values:-12" success="ok" testdata_success="ok">
+<teststep id="4.1" uuid="45d51e55-5c0b-4d99-b50f-5d0ab4c59802" dbid="1878" success="ok" testdata_success="ok" repeat_count="1">
+	<inputs>
+		<input name="r1.range_start" unit="" id="5" value="-13" use="1"/>
+		<input name="r1.range_len" unit="" id="6" value="10" use="1"/>
+		<input name="v1" unit="" id="7" value="-12" use="1"/>
+	</inputs>
+	<results>
+		<result name="is_value_in_range()" unit="" id="3" expected_value="yes" actual_value="yes" success="ok" use="1"/>
+	</results>
+</teststep>
+		</testcase>
+		<testcase id="5" uuid="e46aa86b-7951-45c9-9f6d-158a0e01ac42" dbid="1879" specification="- Position:Outside&#10;  - Where ?:Above&#10;- Range Length:Zero&#10;- Range Start:Positive&#10;  - Instances:50&#10;- Values:60" success="ok" testdata_success="ok">
+<teststep id="5.1" uuid="1ad12248-1a86-42b6-bc34-4752cb998b47" dbid="1880" success="ok" testdata_success="ok" repeat_count="1">
+	<inputs>
+		<input name="r1.range_start" unit="" id="5" value="50" use="1"/>
+		<input name="r1.range_len" unit="" id="6" value="0" use="1"/>
+		<input name="v1" unit="" id="7" value="60" use="1"/>
+	</inputs>
+	<results>
+		<result name="is_value_in_range()" unit="" id="3" expected_value="no" actual_value="no" success="ok" use="1"/>
+	</results>
+</teststep>
+		</testcase>
+		<testcase id="6" uuid="ce6f08b7-2aa3-4e18-98dd-28b00b74a5dc" dbid="1881" specification="- Position:Outside&#10;  - Where ?:Below&#10;- Range Length:Zero&#10;- Range Start:Zero&#10;- Values:-1" success="ok" testdata_success="ok">
+<teststep id="6.1" uuid="55fd5449-8b20-4610-9cad-3606ef164274" dbid="1882" success="ok" testdata_success="ok" repeat_count="1">
+	<inputs>
+		<input name="r1.range_start" unit="" id="5" value="0" use="1"/>
+		<input name="r1.range_len" unit="" id="6" value="0" use="1"/>
+		<input name="v1" unit="" id="7" value="-1" use="1"/>
+	</inputs>
+	<results>
+		<result name="is_value_in_range()" unit="" id="3" expected_value="no" actual_value="no" success="ok" use="1"/>
+	</results>
+</teststep>
+		</testcase>
+		<testcase id="7" uuid="0d896884-cfec-4a4c-8e13-05f0aba6ff88" dbid="1883" specification="- Position:Inside&#10;  - Position in Range:Middle&#10;- Range Length:Zero&#10;- Range Start:Negative&#10;  - Instances:-7&#10;- Values:-7" success="ok" testdata_success="ok">
+<teststep id="7.1" uuid="211dd98a-5f0f-4413-822e-867db4694869" dbid="1884" success="ok" testdata_success="ok" repeat_count="1">
+	<inputs>
+		<input name="r1.range_start" unit="" id="5" value="-7" use="1"/>
+		<input name="r1.range_len" unit="" id="6" value="0" use="1"/>
+		<input name="v1" unit="" id="7" value="-7" use="1"/>
+	</inputs>
+	<results>
+		<result name="is_value_in_range()" unit="" id="3" expected_value="yes" actual_value="yes" success="ok" use="1"/>
+	</results>
+</teststep>
+		</testcase>
+		<testcase id="8" uuid="557332fc-8b05-4ff5-b8a3-262730dfcd6e" dbid="1885" specification="- Position:Inside&#10;  - Position in Range:Middle&#10;- Range Length:Negative&#10;  - Instances:-50&#10;- Range Start:Positive&#10;  - Instances:42&#10;- Values:20" success="notok" testdata_success="notok">
+<teststep id="8.1" uuid="ec1ab368-9747-4cca-9f73-357b5af6f881" dbid="1886" success="notok" testdata_success="notok" repeat_count="1">
+	<inputs>
+		<input name="r1.range_start" unit="" id="5" value="42" use="1"/>
+		<input name="r1.range_len" unit="" id="6" value="-50" use="1"/>
+		<input name="v1" unit="" id="7" value="20" use="1"/>
+	</inputs>
+	<results>
+		<result name="is_value_in_range()" unit="" id="3" expected_value="yes" actual_value="no" success="notok" use="1"/>
+	</results>
+</teststep>
+		</testcase>
+		<testcase id="9" uuid="b6b4ce34-1edc-4f16-ae0e-651f530dcf40" dbid="1887" specification="- Position:Outside&#10;  - Where ?:Below&#10;- Range Length:Negative&#10;  - Instances:-10&#10;- Range Start:Negative&#10;  - Instances:-42&#10;- Values:-43" success="ok" testdata_success="ok">
+<teststep id="9.1" uuid="5db986cd-2bb1-4046-9b47-ea227fc7b036" dbid="1888" success="ok" testdata_success="ok" repeat_count="1">
+	<inputs>
+		<input name="r1.range_start" unit="" id="5" value="-42" use="1"/>
+		<input name="r1.range_len" unit="" id="6" value="-10" use="1"/>
+		<input name="v1" unit="" id="7" value="-43" use="1"/>
+	</inputs>
+	<results>
+		<result name="is_value_in_range()" unit="" id="3" expected_value="no" actual_value="no" success="ok" use="1"/>
+	</results>
+</teststep>
+		</testcase>
+		<testcase id="10" uuid="4c2e3f58-f4c0-43a1-ad7d-a35f7172433e" dbid="1889" specification="- Range Length:Negative&#10;  - Instances:-20&#10;- Range Start:Zero&#10;- Values:1" success="notok" testdata_success="notok">
+<teststep id="10.1" uuid="2437ac0a-a9c9-438d-abd3-da47c30e83f8" dbid="1890" success="notok" testdata_success="notok" repeat_count="1">
+	<inputs>
+		<input name="r1.range_start" unit="" id="5" value="0" use="1"/>
+		<input name="r1.range_len" unit="" id="6" value="-20" use="1"/>
+		<input name="v1" unit="" id="7" value="1" use="1"/>
+	</inputs>
+	<results>
+		<result name="is_value_in_range()" unit="" id="3" expected_value="-" actual_value="no" success="notok" use="1"/>
+	</results>
+</teststep>
+		</testcase>
+	</testobject>
+</report>
