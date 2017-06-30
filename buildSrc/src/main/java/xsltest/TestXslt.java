@@ -2,6 +2,7 @@ package xsltest;
 
 import static java.lang.System.lineSeparator;
 import static java.nio.file.StandardCopyOption.REPLACE_EXISTING;
+import static java.util.stream.Collectors.joining;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -12,6 +13,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.stream.StreamSupport;
 
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerConfigurationException;
@@ -112,8 +114,17 @@ public class TestXslt extends DefaultTask {
         FileOutputStream junit;
         try {
             junit = new FileOutputStream(outputFile);
-
+            
+            
+            
+            Path projectLocalParentDir = file(".").toPath().relativize(inputFile.getParentFile().toPath());
+            String projectLocalParentPath = StreamSupport.stream(projectLocalParentDir.spliterator(), false)
+                         .map(Object::toString)
+                         .collect(joining("/"));
             getLogger().info("transform " + String.valueOf(inputFile) + " -> " + String.valueOf(outputFile));
+            getTransformer().setParameter("filedir",
+                                          projectLocalParentPath);
+            getTransformer().setParameter("filename", inputFile.getName());
             getTransformer().transform(new StreamSource(new FileReader(inputFile)), new StreamResult(junit));
         } catch (FileNotFoundException | TransformerException | TransformerFactoryConfigurationError e) {
             throw new UncheckedIOException(e);
