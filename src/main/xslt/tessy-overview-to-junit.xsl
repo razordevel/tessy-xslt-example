@@ -99,6 +99,7 @@ THE SOFTWARE.
   <xsl:template match="tessyobject[@type='testobject']">
     <xsl:element name="testcase" use-attribute-sets="name_simple testcase_statistics">
       <xsl:apply-templates select="testcase_statistics"/>
+      <xsl:call-template name="attachments"/>
     </xsl:element>
   </xsl:template>
 
@@ -107,4 +108,22 @@ THE SOFTWARE.
     </failure>
   </xsl:template>
 
+  <xsl:template name="attachments">
+    <xsl:if test="$filename!=''">
+      <xsl:choose>
+        <xsl:when test="$filedir!=''">
+          <system-out>
+            [[ATTACHMENT|<xsl:value-of select="concat($filedir, '/', $filename)" />]]
+            [[ATTACHMENT|<xsl:value-of select="concat($filedir, '/',substring-before($filename,'.xml'))" />.pdf]]
+          </system-out>
+        </xsl:when>
+        <xsl:otherwise>
+          <system-out>
+           [[ATTACHMENT|<xsl:value-of select="$filename" />]]
+           [[ATTACHMENT|<xsl:value-of select="substring-before($filename,'.xml')" />.pdf]]
+          </system-out>
+       </xsl:otherwise>
+     </xsl:choose>
+     </xsl:if>
+  </xsl:template>
 </xsl:stylesheet>
