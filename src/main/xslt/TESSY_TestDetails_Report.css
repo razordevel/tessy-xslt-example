@@ -1,0 +1,124 @@
+@CHARSET "UTF-8";
+
+.report_header { //
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+}
+
+.failed_grad {
+	/* IE10 Consumer Preview */
+	background-image: -ms-radial-gradient(right bottom, ellipse farthest-corner, #FFFFFF 70%,
+		#FF0000 100%);
+	/* Mozilla Firefox */
+	background-image: -moz-radial-gradient(right bottom, ellipse farthest-corner, #FFFFFF 70%,
+		#FF0000 100%);
+	/* Opera */
+	background-image: -o-radial-gradient(right bottom, ellipse farthest-corner, #FFFFFF 70%,
+		#FF0000 100%);
+	/* Webkit (Safari/Chrome 10) */
+	background-image: -webkit-gradient(radial, right bottom, 0, right bottom, 1010,
+		color-stop(0.7, #FFFFFF), color-stop(1, #FF0000));
+	/* Webkit (Chrome 11+) */
+	background-image: -webkit-radial-gradient(right bottom, ellipse farthest-corner, #FFFFFF
+		70%, #FF0000 100%);
+	/* W3C Markup, IE10 Release Preview */
+	background-image: radial-gradient(ellipse farthest-corner at right bottom, #FFFFFF 70%,
+		#FF0000 100%);
+}
+
+table td {
+	white-space: nowrap;
+	vertical-align: top;
+}
+
+table th {
+	white-space: nowrap;
+}
+
+table.statistics {
+	margin-top: 0;
+}
+
+h2,h3 {
+	margin-bottom: 0;
+}
+
+pre,.noMarginTop {
+	margin-top: 0;
+}
+
+.prolog,.epilog {
+	font-weight: bold;
+}
+
+.fullWidth {
+	width: 100%;
+}
+
+table.superCol_1 td:first-child {
+	background-color: #86CDF9;
+	width: 15em;
+}
+
+table.superCol_1 tr:nth-child(odd) {
+	background-color: #E0E0E0;
+}
+
+.bgBlue1 {
+	background-color: #6494EC;
+}
+
+.bgBlue2 {
+	background-color: #86CDF9;
+}
+
+h3.ts {
+	margin-top: 0;
+}
+
+table.ts td:first-child {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	width: 60%;
+	min-width: 20em;
+}
+
+table.ts td:not (:first-child ) {
+//	background-color: #E0f0E0;
+	width: 0%;
+}
+
+table.ts tr:nth-child(even) {
+	background-color: #E0E0E0;
+}
+
+table.ts tbody tr:hover {
+	background: yellow;
+}
+
+.show {
+	display: none;
+}
+
+.hide:focus+.show {
+	display: inline;
+}
+
+.hide:focus {
+	display: none;
+}
+
+.hide:focus  ~ #failed_nav {
+	display: none;
+}
+
+@media print {
+	.hide,.show {
+		display: none;
+	}
+}
+
+.failed {
+	background-color: #FF8383;
+}

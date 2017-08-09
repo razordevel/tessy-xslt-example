@@ -22,112 +22,101 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 -->
-
 <!-- Evaluates a TESSY Details Report file and transform them to jUnit xml -->
 <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-  <xsl:param name="filename" />
-  <xsl:param name="filedir" />
-  <xsl:param name="basedir" />
-  <xsl:output method="xml" indent="yes"/>
-  <xsl:strip-space elements="*" />
-
-  <xsl:attribute-set name="testcase_statistics">
-    <xsl:attribute name="tests" ><xsl:value-of select="testcase_statistics/@total" /></xsl:attribute>
-    <xsl:attribute name="failures" ><xsl:value-of select="testcase_statistics/@notok" /></xsl:attribute>
-    <xsl:attribute name="skipped" ><xsl:value-of select="testcase_statistics/@notexecuted" /></xsl:attribute>
-  </xsl:attribute-set>
-  <!--
+	<xsl:param name="filename"/>
+	<xsl:param name="filedir"/>
+	<xsl:param name="basedir"/>
+	<xsl:output method="xml" indent="yes"/>
+	<xsl:strip-space elements="*"/>
+	<!--
     Jenkins interprets . as separator in a Java method path.
     This means the last point separates the test method from the test class.
     The second last point separates the classname from the package name.
   -->
-  <xsl:attribute-set name="name_simple">
-    <xsl:attribute name="name" ><xsl:value-of select="@name" /></xsl:attribute>
-  </xsl:attribute-set>
-  <xsl:attribute-set name="name_concat_last2">
-    <xsl:attribute name="name" ><xsl:value-of select="concat(../@name,'.',@name)" /></xsl:attribute>
-  </xsl:attribute-set>
-
-  <xsl:attribute-set name="name_concat_last3">
-    <xsl:attribute name="name" ><xsl:value-of select="concat(../../@name,'.',../@name,'.',@name)" /></xsl:attribute>
-  </xsl:attribute-set>
-
-  <xsl:attribute-set name="name_concat_last4">
-    <xsl:attribute name="name" ><xsl:value-of select="concat(../../@name,'.',../../@name,'.',../@name,'.',@name)" /></xsl:attribute>
-  </xsl:attribute-set>
-
-  <xsl:attribute-set name="name_concat_last5">
-    <xsl:attribute name="name" ><xsl:value-of select="concat(../../@name,'.',../../@name,'.',../../@name,'.',../@name,'.',@name)" /></xsl:attribute>
-  </xsl:attribute-set>
-
-  <xsl:template match="report">
-    <testsuites>
-      <xsl:attribute name="tests" ><xsl:value-of select="statistic/@total" /></xsl:attribute>
-      <xsl:attribute name="failures" ><xsl:value-of select="statistic/@notok" /></xsl:attribute>
-      <xsl:attribute name="skipped" ><xsl:value-of select="statistic/@notexecuted" /></xsl:attribute>
-      <xsl:attribute name="timestamp" ><xsl:value-of select="info/@date" />T<xsl:value-of select="info/@time" /></xsl:attribute>
-      <xsl:apply-templates  select="tessyobject"/>
-   </testsuites>
-  </xsl:template>
-
-  <xsl:template match="tessyobject[@type='project']">
-    <xsl:element name="testsuite" use-attribute-sets="name_simple testcase_statistics">
-      <xsl:apply-templates select="tessyobject"/>
-    </xsl:element>
-  </xsl:template>
-
-
-  <xsl:template match="tessyobject[@type='test_collection']/tessyobject[@type='module']">
-    <xsl:element name="testsuite" use-attribute-sets="name_concat_last2 testcase_statistics">
-      <xsl:apply-templates select="tessyobject"/>
-    </xsl:element>
-  </xsl:template>
-
-  <xsl:template match="tessyobject[@type='test_collection']/tessyobject[@type='folder']/tessyobject[@type='module']">
-    <xsl:element name="testsuite" use-attribute-sets="name_concat_last3 testcase_statistics">
-      <xsl:apply-templates select="tessyobject"/>
-    </xsl:element>
-  </xsl:template>
-
-  <xsl:template match="tessyobject[@type='test_collection']/tessyobject[@type='folder']/tessyobject[@type='folder']/tessyobject[@type='module']">
-    <xsl:element name="testsuite" use-attribute-sets="name_concat_last4 testcase_statistics">
-      <xsl:apply-templates select="tessyobject"/>
-    </xsl:element>
-  </xsl:template>
-
-
-  <xsl:template match="tessyobject[@type='testobject']">
-    <xsl:element name="testcase" use-attribute-sets="name_simple testcase_statistics">
-      <xsl:apply-templates select="testcase_statistics"/>
-      <xsl:call-template name="attachments"/>
-    </xsl:element>
-  </xsl:template>
-
-  <xsl:template match="tessyobject[@type='testobject']/testcase_statistics[@success='notok']">
-    <failure/>
-  </xsl:template>
-  
-  <xsl:template match="tessyobject[@type='testobject']/testcase_statistics[@success='notexecuted']">
-   	
-    <skipped/>
-  </xsl:template>
-
-  <xsl:template name="attachments">
-    <xsl:if test="$filename!=''">
-      <xsl:choose>
-        <xsl:when test="$filedir!=''">
-          <system-out>
+	<xsl:template match="report">
+		<testsuites>
+			<xsl:attribute name="tests">
+				<xsl:value-of select="statistic/@total"/>
+			</xsl:attribute>
+			<xsl:attribute name="failures">
+				<xsl:value-of select="statistic/@notok"/>
+			</xsl:attribute>
+			<xsl:attribute name="skipped">
+				<xsl:value-of select="statistic/@notexecuted"/>
+			</xsl:attribute>
+			<xsl:attribute name="timestamp"><xsl:value-of select="info/@date"/>T<xsl:value-of select="info/@time"/></xsl:attribute>
+			<xsl:apply-templates select="tessyobject"/>
+		</testsuites>
+	</xsl:template>
+	<xsl:template match="tessyobject[@type='project']">
+		<xsl:element name="testsuite">
+			<xsl:call-template name="simple_name"/>
+			<xsl:call-template name="statistics_attributes"/>
+			<xsl:apply-templates select="tessyobject"/>
+		</xsl:element>
+	</xsl:template>
+	<xsl:template match="tessyobject[@type='test_collection']">
+		<xsl:apply-templates select="tessyobject">
+			<xsl:with-param name="parentsName" select="@name"/>
+		</xsl:apply-templates>
+	</xsl:template>
+	<xsl:template match="tessyobject[@type='module']">
+		<xsl:param name="parentsName"/>
+		<xsl:element name="testsuite">
+			<xsl:attribute name="name">
+				<xsl:value-of select="concat($parentsName,'.', @name)"/>
+			</xsl:attribute>
+			<xsl:call-template name="statistics_attributes"/>
+			<xsl:apply-templates select="tessyobject"/>
+		</xsl:element>
+	</xsl:template>
+	<xsl:template match="tessyobject[@type='folder']">
+		<xsl:param name="parentsName"/>
+		<xsl:apply-templates select="tessyobject">
+			<xsl:with-param name="parentsName" select="concat($parentsName,'.', @name)"/>
+		</xsl:apply-templates>
+	</xsl:template> 
+	<xsl:template match="tessyobject[@type='testobject']">
+		<xsl:element name="testcase">
+			<xsl:call-template name="simple_name"/>
+			<xsl:call-template name="statistics_attributes"/>
+			<xsl:apply-templates select="testcase_statistics"/>
+			<xsl:call-template name="attachments"/>
+		</xsl:element>
+	</xsl:template>
+	<xsl:template name="simple_name">
+		<xsl:attribute name="name">
+			<xsl:value-of select="@name"/>
+		</xsl:attribute>
+	</xsl:template>
+	<xsl:template name="statistics_attributes">
+		<xsl:attribute name="tests"><xsl:value-of select="testcase_statistics/@total"/></xsl:attribute>
+		<xsl:attribute name="failures"><xsl:value-of select="testcase_statistics/@notok"/></xsl:attribute>
+		<xsl:attribute name="skipped"><xsl:value-of select="testcase_statistics/@notexecuted"/></xsl:attribute>
+	</xsl:template>
+	<xsl:template match="tessyobject[@type='testobject']/testcase_statistics[@success='notok']">
+		<failure/>
+	</xsl:template>
+	<xsl:template match="tessyobject[@type='testobject']/testcase_statistics[@success='notexecuted']">
+		<skipped/>
+	</xsl:template>
+	<xsl:template name="attachments">
+		<xsl:if test="$filename!=''">
+			<xsl:choose>
+				<xsl:when test="$filedir!=''">
+					<system-out>
             [[ATTACHMENT|<xsl:value-of select="concat($filedir, '/', $filename)" />]]
             [[ATTACHMENT|<xsl:value-of select="concat($filedir, '/',substring-before($filename,'.xml'))" />.pdf]]
-          </system-out>
-        </xsl:when>
-        <xsl:otherwise>
-          <system-out>
+					</system-out>
+				</xsl:when>
+				<xsl:otherwise>
+					<system-out>
            [[ATTACHMENT|<xsl:value-of select="$filename" />]]
            [[ATTACHMENT|<xsl:value-of select="substring-before($filename,'.xml')" />.pdf]]
-          </system-out>
-       </xsl:otherwise>
-     </xsl:choose>
-     </xsl:if>
-  </xsl:template>
+					</system-out>
+				</xsl:otherwise>
+			</xsl:choose>
+		</xsl:if>
+	</xsl:template>
 </xsl:stylesheet>
