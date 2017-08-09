@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Testsuite.CompTest_30" tests="4" failures="0" timestamp="2017-07-14T14:02:01+0200">
+	<testcase name="20 ms_id2" classname="Testsuite.CompTest_30.Scenarios" assertions="1">
+		<system-out>
+			[[ATTACHMENT|src/test/xslt/TESSY_TestDetails_Report_JUnit/withSkipped/input.xml]] [[ATTACHMENT|src/test/xslt/TESSY_TestDetails_Report_JUnit/withSkipped/input.pdf]]
+		</system-out>
+	</testcase>
+	<testcase name="0 ms_id0" classname="Testsuite.CompTest_30.Scenarios" assertions="1">
+		<system-out>
+			[[ATTACHMENT|src/test/xslt/TESSY_TestDetails_Report_JUnit/withSkipped/input.xml]] [[ATTACHMENT|src/test/xslt/TESSY_TestDetails_Report_JUnit/withSkipped/input.pdf]]
+		</system-out>
+	</testcase>
+	<testcase name="30 ms_id3" classname="Testsuite.CompTest_30.Scenarios" assertions="1">
+		<system-out>
+			[[ATTACHMENT|src/test/xslt/TESSY_TestDetails_Report_JUnit/withSkipped/input.xml]] [[ATTACHMENT|src/test/xslt/TESSY_TestDetails_Report_JUnit/withSkipped/input.pdf]]
+		</system-out>
+	</testcase>
+	<testcase name="0 ms_id0" classname="Testsuite.CompTest_30.Scenarios" assertions="1">
+		<system-out>
+			[[ATTACHMENT|src/test/xslt/TESSY_TestDetails_Report_JUnit/withSkipped/input.xml]] [[ATTACHMENT|src/test/xslt/TESSY_TestDetails_Report_JUnit/withSkipped/input.pdf]]
+		</system-out>
+	</testcase>
+	<testcase name="id7" classname="Testsuite.CompTest_30.Scenarios" assertions="0">
+		<system-out>
+			[[ATTACHMENT|src/test/xslt/TESSY_TestDetails_Report_JUnit/withSkipped/input.xml]] [[ATTACHMENT|src/test/xslt/TESSY_TestDetails_Report_JUnit/withSkipped/input.pdf]]
+		</system-out>
+		<skipped/>
+	</testcase>
+</testsuite>

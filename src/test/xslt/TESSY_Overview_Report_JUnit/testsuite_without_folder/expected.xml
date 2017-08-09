@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="2" failures="0" skipped="0" timestamp="2017-06-28T11:18:50+0200">
+	<testsuite name="Testsuite" tests="6" failures="0" skipped="0">
+		<testsuite name="Testsuite.alias" tests="4" failures="0" skipped="0">
+			<testcase name="CheckThisOut" tests="1" failures="0" skipped="0">
+				<system-out>
+					[[ATTACHMENT|src/test/xslt/TESSY_Overview_Report_JUnit/testsuite_without_folder/input.xml]] [[ATTACHMENT|src/test/xslt/TESSY_Overview_Report_JUnit/testsuite_without_folder/input.pdf]]
+				</system-out>
+			</testcase>
+			<testcase name="switchAlias" tests="1" failures="0" skipped="0">
+				<system-out>
+					[[ATTACHMENT|src/test/xslt/TESSY_Overview_Report_JUnit/testsuite_without_folder/input.xml]] [[ATTACHMENT|src/test/xslt/TESSY_Overview_Report_JUnit/testsuite_without_folder/input.pdf]]
+				</system-out>
+			</testcase>
+			<testcase name="UseArray" tests="1" failures="0" skipped="0">
+				<system-out>
+					[[ATTACHMENT|src/test/xslt/TESSY_Overview_Report_JUnit/testsuite_without_folder/input.xml]] [[ATTACHMENT|src/test/xslt/TESSY_Overview_Report_JUnit/testsuite_without_folder/input.pdf]]
+				</system-out>
+			</testcase>
+			<testcase name="UseDoubleArray" tests="1" failures="0" skipped="0">
+				<system-out>
+					[[ATTACHMENT|src/test/xslt/TESSY_Overview_Report_JUnit/testsuite_without_folder/input.xml]] [[ATTACHMENT|src/test/xslt/TESSY_Overview_Report_JUnit/testsuite_without_folder/input.pdf]]
+				</system-out>
+			</testcase>
+		</testsuite>
+		<testsuite name="Testsuite.tueren" tests="2" failures="0" skipped="0">
+			<testcase name="GetTuerState" tests="1" failures="0" skipped="0">
+				<system-out>
+					[[ATTACHMENT|src/test/xslt/TESSY_Overview_Report_JUnit/testsuite_without_folder/input.xml]] [[ATTACHMENT|src/test/xslt/TESSY_Overview_Report_JUnit/testsuite_without_folder/input.pdf]]
+				</system-out>
+			</testcase>
+			<testcase name="SetTuerState_vr" tests="1" failures="0" skipped="0">
+				<system-out>
+					[[ATTACHMENT|src/test/xslt/TESSY_Overview_Report_JUnit/testsuite_without_folder/input.xml]] [[ATTACHMENT|src/test/xslt/TESSY_Overview_Report_JUnit/testsuite_without_folder/input.pdf]]
+				</system-out>
+			</testcase>
+		</testsuite>
+	</testsuite>
+</testsuites>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Value_In_Range.IsValueInRange" tests="10" failures="3" timestamp="2017-06-30T09:26:41+0200">
+	<testcase name="id1.1" classname="Value_In_Range.IsValueInRange.is_value_in_range" assertions="1">
+		<system-out>
+			[[ATTACHMENT|src/test/xslt/TESSY_TestDetails_Report_JUnit/somefail/input.xml]] [[ATTACHMENT|src/test/xslt/TESSY_TestDetails_Report_JUnit/somefail/input.pdf]]
+		</system-out>
+	</testcase>
+	<testcase name="id2.1" classname="Value_In_Range.IsValueInRange.is_value_in_range" assertions="1">
+		<failure message="Expected value [-], but was [no]" type="Assertion_Failed"/>
+		<system-out>
+			[[ATTACHMENT|src/test/xslt/TESSY_TestDetails_Report_JUnit/somefail/input.xml]] [[ATTACHMENT|src/test/xslt/TESSY_TestDetails_Report_JUnit/somefail/input.pdf]]
+		</system-out>
+	</testcase>
+	<testcase name="id3.1" classname="Value_In_Range.IsValueInRange.is_value_in_range" assertions="1">
+		<system-out>
+			[[ATTACHMENT|src/test/xslt/TESSY_TestDetails_Report_JUnit/somefail/input.xml]] [[ATTACHMENT|src/test/xslt/TESSY_TestDetails_Report_JUnit/somefail/input.pdf]]
+		</system-out>
+	</testcase>
+	<testcase name="id4.1" classname="Value_In_Range.IsValueInRange.is_value_in_range" assertions="1">
+		<system-out>
+			[[ATTACHMENT|src/test/xslt/TESSY_TestDetails_Report_JUnit/somefail/input.xml]] [[ATTACHMENT|src/test/xslt/TESSY_TestDetails_Report_JUnit/somefail/input.pdf]]
+		</system-out>
+	</testcase>
+	<testcase name="id5.1" classname="Value_In_Range.IsValueInRange.is_value_in_range" assertions="1">
+		<system-out>
+			[[ATTACHMENT|src/test/xslt/TESSY_TestDetails_Report_JUnit/somefail/input.xml]] [[ATTACHMENT|src/test/xslt/TESSY_TestDetails_Report_JUnit/somefail/input.pdf]]
+		</system-out>
+	</testcase>
+	<testcase name="id6.1" classname="Value_In_Range.IsValueInRange.is_value_in_range" assertions="1">
+		<system-out>
+			[[ATTACHMENT|src/test/xslt/TESSY_TestDetails_Report_JUnit/somefail/input.xml]] [[ATTACHMENT|src/test/xslt/TESSY_TestDetails_Report_JUnit/somefail/input.pdf]]
+		</system-out>
+	</testcase>
+	<testcase name="id7.1" classname="Value_In_Range.IsValueInRange.is_value_in_range" assertions="1">
+		<system-out>
+			[[ATTACHMENT|src/test/xslt/TESSY_TestDetails_Report_JUnit/somefail/input.xml]] [[ATTACHMENT|src/test/xslt/TESSY_TestDetails_Report_JUnit/somefail/input.pdf]]
+		</system-out>
+	</testcase>
+	<testcase name="id8.1" classname="Value_In_Range.IsValueInRange.is_value_in_range" assertions="1">
+		<failure message="Expected value [yes], but was [no]" type="Assertion_Failed"/>
+		<system-out>
+			[[ATTACHMENT|src/test/xslt/TESSY_TestDetails_Report_JUnit/somefail/input.xml]] [[ATTACHMENT|src/test/xslt/TESSY_TestDetails_Report_JUnit/somefail/input.pdf]]
+		</system-out>
+	</testcase>
+	<testcase name="id9.1" classname="Value_In_Range.IsValueInRange.is_value_in_range" assertions="1">
+		<system-out>
+			[[ATTACHMENT|src/test/xslt/TESSY_TestDetails_Report_JUnit/somefail/input.xml]] [[ATTACHMENT|src/test/xslt/TESSY_TestDetails_Report_JUnit/somefail/input.pdf]]
+		</system-out>
+	</testcase>
+	<testcase name="id10.1" classname="Value_In_Range.IsValueInRange.is_value_in_range" assertions="1">
+		<failure message="Expected value [-], but was [no]" type="Assertion_Failed"/>
+		<system-out>
+			[[ATTACHMENT|src/test/xslt/TESSY_TestDetails_Report_JUnit/somefail/input.xml]] [[ATTACHMENT|src/test/xslt/TESSY_TestDetails_Report_JUnit/somefail/input.pdf]]
+		</system-out>
+	</testcase>
+</testsuite>

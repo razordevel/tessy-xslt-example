@@ -1,11 +1,11 @@
 import xsltest.*
 
 task testDetail(type: TestXslt) {
-    xsltName = 'tessy-detail-to-junit.xsl'
+    xsltName = 'TESSY_Overview_Report_JUnit.xsl'
 }
 
 task testOverview(type: TestXslt) {
-    xsltName = 'tessy-overview-to-junit.xsl'
+    xsltName = 'TESSY_TestDetails_Report_JUnit.xsl'
 }
 
 task testAllXslt() {
