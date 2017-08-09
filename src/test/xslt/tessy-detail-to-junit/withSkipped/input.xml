@@ -1,0 +1,309 @@
+<report xml_version="3" tessy_version="4.0.17" testobject_name="Scenarios" testobject_uuid="74c61a8a-d0a2-410f-b612-2c3ddddfe8a1" success="ok">
+	<summary>
+		<info project_name="Testsuite" module_name="CompTest_30" module_uuid="ab5bc998-36b6-4e3f-bbba-ba29cdee5671" testobject_name="Scenarios" testobject_uuid="74c61a8a-d0a2-410f-b612-2c3ddddfe8a1" cte_file="true" date="2017-07-14" time="14:02:01+0200" user="jenkins" host="ThorsWin7-VM"/>
+		<cte>
+			<cte_file file="Iw0KIyBDVEUtRmlsZSBnZW5lcmF0ZWQgYnkgQ1RFIFZlcnNpb24gMi40LjANCiMNCg0KRmlsZSBWZXJzaW9uICAgOiAyLjQwDQpBdXRob3IgICAgICAgICA6ICJtLndpdHRuZXIiDQpDcmVhdGVkICAgICAgICA6IDIwLjA1LjIwMDkgMjI6MjANCkxhc3QgQ2hhbmdlZCAgIDogMDEuMDcuMjAxNSAxNzozOQ0KVmVyc2lvbiAgICAgICAgOiAxLjE5DQpGcmFtZSBGb250ICAgICA6ICJBcmlhbCwxMSwwLDAsNDAwLDAsMCwwLDEiDQpUZXN0Y2FzZSBGb250ICA6ICJBcmlhbCwxMiwwLDAsNzAwLDAsMCwwLDEiDQoNCkZyYW1lDQogIElkICAgICAgICAgICAgICAgOiAwDQogIFBvc2l0aW9uICAgICAgICAgOiAwLCAwDQogIFNpemUgICAgICAgICAgICAgOiAwLCAwDQogIEZvbnQgICAgICAgICAgICAgOiAiQXJpYWwsOSwwLDAsNDAwLDQ5LDAsMCwxIg0KICBQYXBlclNpemUgICAgICAgIDogRElOLUE0DQogIFBhcGVyT3JpZW50YXRpb24gOiBMYW5kc2NhcGUNCiAgU3RhdGUgICAgICAgICAgICA6IE5vcm1hbA0KICBMYXlvdXQgICAgICAgICAgIDogMTMsIDYxDQoNCiAgRWxlbWVudA0KICAgIFR5cGUgOiBSb290DQogICAgSWQgOiAxDQogICAgUGFyZW50SWQgOiAtMQ0KICAgIE5hbWUgOiAiU2NlbmFyaW9zIg0KICAgIFRyYW5zaXRpb25Sb290IDogTm8NCiAgICBCZWdpbg0KICAgICAgIk1vZHVsZSIgOiAiRGVjcmVtZW50SGFuZGxlciIsDQogICAgICAiUHJvamVjdCIgOiAiQ29tcG9uZW50VGVzdCIsDQogICAgICAiVGVzdG9iamVjdCIgOiAiU2NlbmFyaW9zIg0KICAgIEVuZA0KICAgIFBvc2l0aW9uIDogMjEyLCA2DQogIEVuZA0KDQogIEVsZW1lbnQNCiAgICBUeXBlIDogQ2xhc3NpZmljYXRpb24NCiAgICBJZCA6IDINCiAgICBQYXJlbnRJZCA6IDENCiAgICBOYW1lIDogIm9wZXJhdGlvblxyXG4iDQogICAgICAgICAgICJtb2RlIg0KICAgIFRyYW5zaXRpb25Sb290IDogTm8NCiAgICBQb3NpdGlvbiA6IDk3LCA0Ng0KICBFbmQNCg0KICBFbGVtZW50DQogICAgVHlwZSA6IENsYXNzDQogICAgSWQgOiAzDQogICAgUGFyZW50SWQgOiAyDQogICAgTmFtZSA6ICJpbml0Ig0KICAgIFRyYW5zaXRpb25Sb290IDogTm8NCiAgICBQb3NpdGlvbiA6IDEzLCAxMDENCiAgRW5kDQoNCiAgRWxlbWVudA0KICAgIFR5cGUgOiBDbGFzcw0KICAgIElkIDogNA0KICAgIFBhcmVudElkIDogMg0KICAgIE5hbWUgOiAibm9ybWFsIg0KICAgIFRyYW5zaXRpb25Sb290IDogTm8NCiAgICBQb3NpdGlvbiA6IDE5NCwgMTAxDQogIEVuZA0KDQogIEVsZW1lbnQNCiAgICBUeXBlIDogQ2xhc3NpZmljYXRpb24NCiAgICBJZCA6IDgNCiAgICBQYXJlbnRJZCA6IDQNCiAgICBOYW1lIDogImNvbXBvbmVudCBjYWxsXHJcbiINCiAgICAgICAgICAgInNlcXVlbmNlIg0KICAgIFRyYW5zaXRpb25Sb290IDogTm8NCiAgICBQb3NpdGlvbiA6IDcyLCAxNDENCiAgRW5kDQoNCiAgRWxlbWVudA0KICAgIFR5cGUgOiBDbGFzcw0KICAgIElkIDogOQ0KICAgIFBhcmVudElkIDogOA0KICAgIE5hbWUgOiAib25seSBvbmVcclxuIg0KICAgICAgICAgICAiY2FsbCINCiAgICBUcmFuc2l0aW9uUm9vdCA6IE5vDQogICAgUG9zaXRpb24gOiA1MCwgMjExDQogIEVuZA0KDQogIEVsZW1lbnQNCiAgICBUeXBlIDogQ2xhc3MNCiAgICBJZCA6IDEwDQogICAgUGFyZW50SWQgOiA4DQogICAgTmFtZSA6ICJuZXcgY2FsbFxyXG4iDQogICAgICAgICAgICJiZWZvcmUgemVyb1xyXG4iDQogICAgICAgICAgICJyZWFjaGVkIg0KICAgIFRyYW5zaXRpb25Sb290IDogTm8NCiAgICBQb3NpdGlvbiA6IDExNywgMjExDQogIEVuZA0KDQogIEVsZW1lbnQNCiAgICBUeXBlIDogQ2xhc3NpZmljYXRpb24NCiAgICBJZCA6IDUNCiAgICBQYXJlbnRJZCA6IDQNCiAgICBOYW1lIDogInBhcmFtZXRlciB2YWx1ZVxyXG4iDQogICAgICAgICAgICJvZiBzZXRfbnVtYmVyKClcclxuIg0KICAgICAgICAgICAiZnVuY3Rpb24iDQogICAgVHJhbnNpdGlvblJvb3QgOiBObw0KICAgIFBvc2l0aW9uIDogMjY3LCAxNDENCiAgRW5kDQoNCiAgRWxlbWVudA0KICAgIFR5cGUgOiBDbGFzcw0KICAgIElkIDogNg0KICAgIFBhcmVudElkIDogNQ0KICAgIE5hbWUgOiAidmFsaWQiDQogICAgVHJhbnNpdGlvblJvb3QgOiBObw0KICAgIFBvc2l0aW9uIDogMjI1LCAyMTENCiAgRW5kDQoNCiAgRWxlbWVudA0KICAgIFR5cGUgOiBDbGFzc2lmaWNhdGlvbg0KICAgIElkIDogMTQNCiAgICBQYXJlbnRJZCA6IDYNCiAgICBOYW1lIDogInZhbHVlIGluXHJcbiINCiAgICAgICAgICAgInJhbmdlIg0KICAgIFRyYW5zaXRpb25Sb290IDogTm8NCiAgICBQb3NpdGlvbiA6IDIxNywgMjUxDQogIEVuZA0KDQogIEVsZW1lbnQNCiAgICBUeXBlIDogQ2xhc3MNCiAgICBJZCA6IDE1DQogICAgUGFyZW50SWQgOiAxNA0KICAgIE5hbWUgOiAiPCA4MCINCiAgICBUcmFuc2l0aW9uUm9vdCA6IE5vDQogICAgUG9zaXRpb24gOiAyMDAsIDMwNg0KICBFbmQNCg0KICBFbGVtZW50DQogICAgVHlwZSA6IENsYXNzDQogICAgSWQgOiAxNg0KICAgIFBhcmVudElkIDogMTQNCiAgICBOYW1lIDogIj49IDgwIg0KICAgIFRyYW5zaXRpb25Sb290IDogTm8NCiAgICBQb3NpdGlvbiA6IDI0NSwgMzA2DQogIEVuZA0KDQogIEVsZW1lbnQNCiAgICBUeXBlIDogQ2xhc3MNCiAgICBJZCA6IDcNCiAgICBQYXJlbnRJZCA6IDUNCiAgICBOYW1lIDogImludmFsaWQiDQogICAgVHJhbnNpdGlvblJvb3QgOiBObw0KICAgIFBvc2l0aW9uIDogMzY0LCAyMTENCiAgRW5kDQoNCiAgRWxlbWVudA0KICAgIFR5cGUgOiBDbGFzc2lmaWNhdGlvbg0KICAgIElkIDogMTENCiAgICBQYXJlbnRJZCA6IDcNCiAgICBOYW1lIDogImZhaWx1cmUgY2F1c2UiDQogICAgVHJhbnNpdGlvblJvb3QgOiBObw0KICAgIFBvc2l0aW9uIDogMzQ2LCAyNTENCiAgRW5kDQoNCiAgRWxlbWVudA0KICAgIFR5cGUgOiBDbGFzcw0KICAgIElkIDogMTINCiAgICBQYXJlbnRJZCA6IDExDQogICAgTmFtZSA6ICJ2YWx1ZSB0b28gaGlnaCINCiAgICBUcmFuc2l0aW9uUm9vdCA6IE5vDQogICAgUG9zaXRpb24gOiAyOTgsIDI5MQ0KICBFbmQNCg0KICBFbGVtZW50DQogICAgVHlwZSA6IENsYXNzDQogICAgSWQgOiAxMw0KICAgIFBhcmVudElkIDogMTENCiAgICBOYW1lIDogInZhbHVlIHRvbyBsb3ciDQogICAgVHJhbnNpdGlvblJvb3QgOiBObw0KICAgIFBvc2l0aW9uIDogMzk1LCAyOTENCiAgRW5kDQpFbmQNCg0KVGVzdENhc2UNCiAgSWQgOiAxDQogIEZsYWcgOiBObw0KICBTdGF0ZSA6IFBhc3NlZA0KICBOYW1lIDogIiINCiAgTWFya3MNCiAgICBNYXJrDQogICAgICBJZCA6IDMNCiAgICAgIFR5cGUgOiBTb2xpZENpcmNsZQ0KICAgIEVuZA0KICBFbmQNCkVuZA0KDQpUZXN0Q2FzZQ0KICBJZCA6IDINCiAgRmxhZyA6IE5vDQogIFN0YXRlIDogUGFzc2VkDQogIE5hbWUgOiAiIg0KICBNYXJrcw0KICAgIE1hcmsNCiAgICAgIElkIDogOQ0KICAgICAgVHlwZSA6IFNvbGlkQ2lyY2xlDQogICAgRW5kDQogICAgTWFyaw0KICAgICAgSWQgOiAxNg0KICAgICAgVHlwZSA6IFNvbGlkQ2lyY2xlDQogICAgRW5kDQogIEVuZA0KRW5kDQoNClRlc3RDYXNlDQogIElkIDogOA0KICBGbGFnIDogTm8NCiAgU3RhdGUgOiBQYXNzZWQNCiAgTmFtZSA6ICIiDQogIE1hcmtzDQogICAgTWFyaw0KICAgICAgSWQgOiA5DQogICAgICBUeXBlIDogU29saWRDaXJjbGUNCiAgICBFbmQNCiAgICBNYXJrDQogICAgICBJZCA6IDE1DQogICAgICBUeXBlIDogU29saWRDaXJjbGUNCiAgICBFbmQNCiAgRW5kDQpFbmQNCg0KVGVzdENhc2UNCiAgSWQgOiAzDQogIEZsYWcgOiBObw0KICBTdGF0ZSA6IFBhc3NlZA0KICBOYW1lIDogIiINCiAgTWFya3MNCiAgICBNYXJrDQogICAgICBJZCA6IDkNCiAgICAgIFR5cGUgOiBTb2xpZENpcmNsZQ0KICAgIEVuZA0KICAgIE1hcmsNCiAgICAgIElkIDogMTINCiAgICAgIFR5cGUgOiBTb2xpZENpcmNsZQ0KICAgIEVuZA0KICBFbmQNCkVuZA0KDQpUZXN0Q2FzZQ0KICBJZCA6IDQNCiAgRmxhZyA6IE5vDQogIFN0YXRlIDogUGFzc2VkDQogIE5hbWUgOiAiIg0KICBNYXJrcw0KICAgIE1hcmsNCiAgICAgIElkIDogOQ0KICAgICAgVHlwZSA6IFNvbGlkQ2lyY2xlDQogICAgRW5kDQogICAgTWFyaw0KICAgICAgSWQgOiAxMw0KICAgICAgVHlwZSA6IFNvbGlkQ2lyY2xlDQogICAgRW5kDQogIEVuZA0KRW5kDQoNClRlc3RDYXNlDQogIElkIDogNQ0KICBGbGFnIDogTm8NCiAgU3RhdGUgOiBQYXNzZWQNCiAgTmFtZSA6ICIiDQogIE1hcmtzDQogICAgTWFyaw0KICAgICAgSWQgOiAxMA0KICAgICAgVHlwZSA6IFNvbGlkQ2lyY2xlDQogICAgRW5kDQogICAgTWFyaw0KICAgICAgSWQgOiAxNg0KICAgICAgVHlwZSA6IFNvbGlkQ2lyY2xlDQogICAgRW5kDQogIEVuZA0KRW5kDQoNClRlc3RDYXNlDQogIElkIDogNg0KICBGbGFnIDogTm8NCiAgU3RhdGUgOiBQYXNzZWQNCiAgTmFtZSA6ICIiDQogIE1hcmtzDQogICAgTWFyaw0KICAgICAgSWQgOiAxMA0KICAgICAgVHlwZSA6IFNvbGlkQ2lyY2xlDQogICAgRW5kDQogICAgTWFyaw0KICAgICAgSWQgOiAxMg0KICAgICAgVHlwZSA6IFNvbGlkQ2lyY2xlDQogICAgRW5kDQogIEVuZA0KRW5k"/>
+			<cte_data>
+				<cte_node id="1">
+					<inputs>
+					</inputs>
+					<results>
+					</results>
+				</cte_node>
+				<cte_node id="2">
+					<inputs>
+					</inputs>
+					<results>
+					</results>
+				</cte_node>
+				<cte_node id="3">
+					<inputs>
+					</inputs>
+					<results>
+					</results>
+				</cte_node>
+				<cte_node id="4">
+					<inputs>
+					</inputs>
+					<results>
+					</results>
+				</cte_node>
+				<cte_node id="5">
+					<inputs>
+					</inputs>
+					<results>
+					</results>
+				</cte_node>
+				<cte_node id="6">
+					<inputs>
+					</inputs>
+					<results>
+					</results>
+				</cte_node>
+				<cte_node id="7">
+					<inputs>
+					</inputs>
+					<results>
+					</results>
+				</cte_node>
+				<cte_node id="8">
+					<inputs>
+					</inputs>
+					<results>
+					</results>
+				</cte_node>
+				<cte_node id="9">
+					<inputs>
+					</inputs>
+					<results>
+					</results>
+				</cte_node>
+			</cte_data>
+		</cte>
+		<comments>
+		</comments>
+		<statistic total="7" ok="6" ok_list="1;2;3;4;5;6" notok="0" notok_list="" notexecuted="1" notexecuted_list="7"/>
+<interface>
+<mod id="7b26194e-31f6-4093-879a-ed13aca7faa2" lid="19" opt="7" ver="18">
+<funcs>
+<func id="9" nam="Scenarios" scp="2" src="1"/>
+<func id="2" nam="init" scp="2" src="1"/>
+<func id="3" nam="set_number" scp="2" src="1"/>
+<func id="4" nam="decrement" scp="4" src="1"/>
+<func id="8" nam="handler" scp="2" src="1"/>
+<func id="5" nam="crossed_75" scp="8" src="0" use="1"/>
+<func id="6" nam="crossed_50" scp="8" src="0" use="1"/>
+<func id="7" nam="crossed_25" scp="8" src="0" use="1"/>
+</funcs>
+<types/>
+<vars>
+<var id="2" nam="number" scp="4" src="1" tc="10" tmd="0x800000000000000"/>
+<var id="5" nam="decrement_rate" scp="1028" src="1" tc="10" tmd="0x800000000000000"/>
+</vars>
+<defines>
+<define id="17" nam="MAX_VALUE" val="100"/>
+</defines>
+</mod>
+<funcs>
+<func id="9" nam="Scenarios">
+<ret id="19" tc="35"/>
+<calls>
+<call id="2" use="304"/>
+<call id="3" use="304"/>
+<call comp="0" id="4" use="304"/>
+<call id="5" use="257"/>
+<call id="6" use="257"/>
+<call id="7" use="257"/>
+<call id="8" use="304"/>
+</calls>
+<vars>
+<var crf="2,3,4,8" id="2" ips="8" pas="8" scp="4"/>
+<var crf="3,8" id="5" ips="8" pas="1" scp="1028"/>
+</vars>
+</func>
+<func id="2" nam="init">
+<ret id="1" tc="35"/>
+<vars>
+<var id="2" ips="4" pas="4" scp="4"/>
+</vars>
+</func>
+<func id="3" nam="set_number">
+<ret id="3" ips="4" pas="4" tc="10" tmd="0x800000000000000"/>
+<parms>
+<parm id="4" ips="2" nam="value" pas="2" tc="10" tmd="0x800000000000000"/>
+</parms>
+<vars>
+<var id="5" ips="4" pas="4" scp="4"/>
+<var id="2" ips="4" pas="4" scp="4"/>
+</vars>
+</func>
+<func id="4" nam="decrement">
+<ret id="7" tc="35"/>
+<parms>
+<parm id="8" ips="2" nam="value" pas="2" tc="10" tmd="0x800000000000000"/>
+</parms>
+<calls>
+<call id="5" use="257"/>
+<call id="6" use="257"/>
+<call id="7" use="257"/>
+</calls>
+<vars>
+<var id="2" ips="8" pas="8" scp="4"/>
+</vars>
+</func>
+<func id="8" nam="handler">
+<ret id="13" tc="35"/>
+<calls>
+<call comp="0" id="4" use="304"/>
+<call id="5" use="1"/>
+<call id="6" use="1"/>
+<call id="7" use="1"/>
+</calls>
+<vars>
+<var id="5" ips="8" pas="8" scp="4"/>
+<var id="2" ips="8" pas="8" scp="4"/>
+</vars>
+</func>
+<func id="5" nam="crossed_75">
+<ret id="10" tc="35"/>
+</func>
+<func id="6" nam="crossed_50">
+<ret id="11" tc="35"/>
+</func>
+<func id="7" nam="crossed_25">
+<ret id="12" tc="35"/>
+</func>
+</funcs>
+</interface>
+		<properties directory="C:\workspaceJenkins\TestSuite\gcc\tessy\work\00000407\00001744\00001745" config="$(PWD)\config\configuration.xml" project_root="C:\workspaceJenkins\TestSuite\gcc" source_root="C:\workspaceJenkins\TestSuite\gcc\sources" project_description="" environment="GNU GCC GNU GVD (Default)" kind_of_test="COMPONENT">
+			<source file="$(PROJECTROOT)\sources\component_tests\decrement_handler.c" sha1="40cc0dfaba81ae07160b18bf13c1f1d514f605a6"/>
+		</properties>
+		<attributes>
+			<attribute name="CTE File" value="$(PWD)\persist\tessy\project\00000407\00001744\00001745\.database\.tdb\00001746\Scenarios.cte"/>
+		</attributes>
+		<worktaskconfig stepwidth="10" timeunit="ms">
+			<worktask name="handler" starttime="0" cycletime="10"/>
+		</worktaskconfig>
+	</summary>
+	<module>
+	</module>
+	<usercode>
+		<stubs>
+			<stub name="crossed_25" head="void crossed_25()" body=""/>
+			<stub name="crossed_50" head="void crossed_50()" body=""/>
+			<stub name="crossed_75" head="void crossed_75()" body=""/>
+		</stubs>
+	</usercode>
+	<testobject success="ok">
+<testcase scenario="INIT
+   call init()
+End of Scenario, [0 ms]
+" id="1" uuid="53932481-c93f-468a-8130-96729fcd652b" dbid="5960" specification="- operation mode:init" success="ok" calltrace_success="ok">
+	<results>
+	</results>
+</testcase>
+<testcase scenario="INIT
+   call init()
+... [0 - 10 ms]
+20 ms
+   call set_number(value=90)
+30 ms
+   called crossed_25() [30 - 130 ms]
+   called crossed_50() [30 - 100 ms]
+   called crossed_75() [30 - 70 ms]
+... [40 - 120 ms]
+End of Scenario, [130 ms]
+" id="2" uuid="fa06fa8d-ce27-4f82-9331-16386a1e6917" dbid="5961" specification="- operation mode:normal
+  - component call sequence:only one call
+  - parameter value of set_number() function:valid
+    - value in range:&gt;= 80" success="ok" calltrace_success="ok" evalmacro_success="ok">
+	<call_trace teststep_id="5961" success="ok">
+		<trace_entry actual="crossed_25 [90 ms]" actual_count="1" expected="crossed_25 [30 - 130 ms]" expected_count="1" success="ok"/>
+		<trace_entry actual="crossed_50 [80 ms]" actual_count="1" expected="crossed_50 [30 - 100 ms]" expected_count="1" success="ok"/>
+		<trace_entry actual="crossed_75 [70 ms]" actual_count="1" expected="crossed_75 [30 - 70 ms]" expected_count="1" success="ok"/>
+	</call_trace>
+	<results>
+	</results>
+	<teststep id="2" uuid="N/A" dbid="3" name="20 ms" success="ok">
+		<inputs>
+		</inputs>
+		<results>
+			<result name="set_number() [20 ms]" expected_value="0x00000000" actual_value="0x00000000" success="ok" evalmacro="1"/>
+		</results>
+	</teststep>
+</testcase>
+<testcase scenario="INIT
+   call init()
+0 ms
+   call set_number(value=60)
+10 ms
+   not called crossed_75() [10 - 110 ms]
+... [20 - 100 ms]
+End of Scenario, [110 ms]
+" id="3" uuid="277bca01-1d9e-4540-bd6c-0c2840357db7" dbid="5962" specification="- operation mode:normal
+  - component call sequence:only one call
+  - parameter value of set_number() function:valid
+    - value in range:&lt; 80" success="ok" calltrace_success="ok" evalmacro_success="ok">
+	<call_trace teststep_id="5962" success="ok">
+		<trace_entry actual="*none*" actual_count="0" expected="crossed_75 [10 - 110 ms]" expected_count="0" success="ok"/>
+	</call_trace>
+	<results>
+	</results>
+	<teststep id="0" uuid="N/A" dbid="6" name="0 ms" success="ok">
+		<inputs>
+		</inputs>
+		<results>
+			<result name="set_number() [0 ms]" expected_value="0x00000000" actual_value="0x00000000" success="ok" evalmacro="1"/>
+		</results>
+	</teststep>
+</testcase>
+<testcase scenario="INIT
+   call init()
+... [0 - 20 ms]
+30 ms
+   call set_number(value=101)
+End of Scenario, [30 ms]
+" id="4" uuid="40bae11b-a030-42cf-ac4d-7a9583224180" dbid="5963" specification="- operation mode:normal
+  - component call sequence:only one call
+  - parameter value of set_number() function:invalid
+    - failure cause:value too high" success="ok" calltrace_success="ok" evalmacro_success="ok">
+	<results>
+	</results>
+	<teststep id="3" uuid="N/A" dbid="9" name="30 ms" success="ok">
+		<inputs>
+		</inputs>
+		<results>
+			<result name="set_number() [30 ms]" expected_value="0x00000001" actual_value="0x00000001" success="ok" evalmacro="1"/>
+		</results>
+	</teststep>
+</testcase>
+<testcase scenario="INIT
+   call init()
+0 ms
+   call set_number(value=-1)
+End of Scenario, [0 ms]
+" id="5" uuid="04f350a6-e803-4318-ac3b-4504111ed124" dbid="5964" specification="- operation mode:normal
+  - component call sequence:only one call
+  - parameter value of set_number() function:invalid
+    - failure cause:value too low" success="ok" calltrace_success="ok" evalmacro_success="ok">
+	<results>
+	</results>
+	<teststep id="0" uuid="N/A" dbid="11" name="0 ms" success="ok">
+		<inputs>
+		</inputs>
+		<results>
+			<result name="set_number() [0 ms]" expected_value="0x00000001" actual_value="0x00000001" success="ok" evalmacro="1"/>
+		</results>
+	</teststep>
+</testcase>
+<testcase scenario="INIT
+   call init()
+0 ms
+   call set_number(value=85)
+10 ms
+   called crossed_75() [10 - 40 ms]
+... [20 - 40 ms]
+50 ms
+   call set_number(value=80)
+60 ms
+   called crossed_75() [60 - 100 ms]
+... [70 - 90 ms]
+End of Scenario, [100 ms]
+" id="6" uuid="f58da059-58e2-43bb-9799-6fb56936cfda" dbid="5965" specification="- operation mode:normal
+  - component call sequence:new call before zero reached
+  - parameter value of set_number() function:valid
+    - value in range:&gt;= 80" success="ok" calltrace_success="ok">
+	<call_trace teststep_id="5965" success="ok">
+		<trace_entry actual="crossed_75 [40 ms]" actual_count="1" expected="crossed_75 [10 - 40 ms]" expected_count="1" success="ok"/>
+		<trace_entry actual="crossed_75 [80 ms]" actual_count="1" expected="crossed_75 [60 - 100 ms]" expected_count="1" success="ok"/>
+	</call_trace>
+	<results>
+	</results>
+</testcase>
+		<testcase id="7" uuid="14694fe5-f3eb-47d4-a8f8-c3967038aec4" dbid="5966" specification="- operation mode:normal
+  - component call sequence:new call before zero reached
+  - parameter value of set_number() function:invalid
+    - failure cause:value too high" success="notexecuted">
+		</testcase>
+	</testobject>
+</report>

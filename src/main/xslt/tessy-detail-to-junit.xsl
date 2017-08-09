@@ -44,6 +44,29 @@ THE SOFTWARE.
   <xsl:template match="testcase">
       <xsl:apply-templates select="teststep" />
   </xsl:template>
+  
+    <xsl:template match="testcase[@success='notexecuted']">
+     <testcase>
+      <xsl:attribute name="name">
+        <xsl:if test="1=count(@name)">
+          <xsl:value-of select="@name" />
+          <xsl:value-of select="'_'" />
+        </xsl:if>
+        <xsl:value-of select="'id'" />
+        <xsl:value-of select="@id" />
+      </xsl:attribute>
+      <xsl:attribute name="classname" ><xsl:call-template name="packagename"/>.<xsl:value-of select="/report/summary/info/@testobject_name"/></xsl:attribute>
+      <xsl:attribute name="assertions" ><xsl:value-of select="count(results/result[@expected_value!='*none*'])"/></xsl:attribute>
+      <xsl:apply-templates select="results/result" />
+      <xsl:call-template name="attachments"/>
+      <skipped/>
+      <!--
+            <xsl:attribute name="time" />
+            <xsl:attribute name="status" />
+      -->
+    </testcase>
+          
+  </xsl:template>
 
   <xsl:template match="teststep">
     <testcase>

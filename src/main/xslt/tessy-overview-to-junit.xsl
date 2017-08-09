@@ -104,8 +104,12 @@ THE SOFTWARE.
   </xsl:template>
 
   <xsl:template match="tessyobject[@type='testobject']/testcase_statistics[@success='notok']">
-    <failure>
-    </failure>
+    <failure/>
+  </xsl:template>
+  
+  <xsl:template match="tessyobject[@type='testobject']/testcase_statistics[@success='notexecuted']">
+   	
+    <skipped/>
   </xsl:template>
 
   <xsl:template name="attachments">
