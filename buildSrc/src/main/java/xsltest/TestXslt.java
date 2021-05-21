@@ -44,12 +44,23 @@ public class TestXslt extends DefaultTask {
     private Transformer        transformer;
     private Map<Path, Diff>    differences              = new LinkedHashMap<>();
 
+    public TestXslt() {
+        setGroup("Test");
+    }
+
     public String getXsltName() {
         return xsltName;
     }
 
     public void setXsltName(String xsltName) {
         this.xsltName = xsltName;
+    }
+
+    public String getDescription() {
+        if(super.getDescription() == null) {
+            return "Tests the XSL transformation '" + xsltName+"'";
+        }
+        return getDescription();
     }
 
     @InputFile

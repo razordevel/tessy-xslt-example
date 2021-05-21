@@ -9,6 +9,8 @@ task testOverview(type: TestXslt) {
 }
 
 task testAllXslt() {
+    description 'Tests all XSL transformations.'
+    group 'Test'
     dependsOn  {
           tasks.findAll { it instanceof TestXslt }
     }
