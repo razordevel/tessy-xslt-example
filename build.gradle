@@ -8,6 +8,15 @@ task testOverview(type: TestXslt) {
     xsltName = 'TESSY_TestDetails_Report_JUnit.xsl'
 }
 
+task testDetail_TestQualityAnalysis(type: TestXslt) {
+    xsltName = 'TESSY_TestDetails_Report_TestQualityAnalysis.xsl'
+	outputFileName = 'output.html'
+}
+
+task testDetail_TestQualityAnalysisJunit(type: TestXslt) {
+    xsltName = 'TESSY_TestDetails_Report_TestQualityAnalysisJunit.xsl'
+}
+
 task testAllXslt() {
     description 'Tests all XSL transformations.'
     group 'Test'

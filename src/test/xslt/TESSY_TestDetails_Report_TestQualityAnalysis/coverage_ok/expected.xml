@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?><html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>ElevatorCabin</title>
+<style>
+					td.failed { 
+					background-color: red;
+					}
+					td.passed { 
+					background-color: lightgreen;
+					}
+				</style>
+</head>
+<script>
+				function triggerReload() {
+				location.reload();
+				}
+			</script>
+<body onload="window.setTimeout(triggerReload,1000)">
+<table border="1" cellpadding="3">
+<tbody>
+<tr>
+<td>Teststeps</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Date</td>
+<td>2021-05-26</td>
+</tr>
+<tr>
+<td>Time</td>
+<td>10:00:54+0200</td>
+</tr>
+<tr>
+<th colspan="2">Statement Coverage (C0)</th>
+</tr>
+<tr>
+<td>Total Branches</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Reached Branches</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Percent of Reached Branches</td>
+<td>100</td>
+</tr>
+<tr>
+<td>Status</td>
+<td class="passed">
+				Passed
+			</td>
+</tr>
+<tr>
+<th colspan="2">Branch Coverage (C1)</th>
+</tr>
+<tr>
+<td>Total Branches</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Reached Branches</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Percent of Reached Branches</td>
+<td>100</td>
+</tr>
+<tr>
+<td>Status</td>
+<td class="passed">
+				Passed
+			</td>
+</tr>
+<tr>
+<th colspan="2">Decision Coverage (DC)</th>
+</tr>
+<tr>
+<td>Total Branches</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Reached Branches</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Percent of Reached Branches</td>
+<td>100</td>
+</tr>
+<tr>
+<td>Status</td>
+<td class="passed">
+				Passed
+			</td>
+</tr>
+<tr>
+<th colspan="2">Modified Condition / Decision Coverage (MC/DC)</th>
+</tr>
+<tr>
+<td>Total Branches</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Reached Branches</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Percent of Reached Branches</td>
+<td>100</td>
+</tr>
+<tr>
+<td>Status</td>
+<td class="passed">
+				Passed
+			</td>
+</tr>
+<tr>
+<th colspan="2">Cyclomatic Complexity</th>
+</tr>
+<tr>
+<td>Value</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Status</td>
+<td class="passed">
+				Passed
+			</td>
+</tr>
+<tr>
+<th colspan="2">Result Significance</th>
+</tr>
+<tr>
+<td>Status</td>
+<td class="passed">
+				Passed
+			</td>
+</tr>
+<tr>
+<th colspan="2">Ratio Test Coverage and Cyclomatic Complexity</th>
+</tr>
+<tr>
+<td>Value</td>
+<td>1.00</td>
+</tr>
+<tr>
+<td>Status</td>
+<td class="passed">
+				Passed
+			</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

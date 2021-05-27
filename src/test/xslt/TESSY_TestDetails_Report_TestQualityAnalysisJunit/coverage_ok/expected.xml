@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="TestQuality.Elevator.Cabin" timestamp="2021-05-26T10:00:54+0200">
+<testcase name="Statement Coverage (C0)" classname="TestQuality.Elevator.Cabin.closeDoors">
+<system-out>
+Total Branches: 5
+Reached Branches: 5
+Percent of Reached Branches: 100
+Success: ok
+==PASSED==
+		</system-out>
+</testcase>
+<testcase name="Branch Coverage (C1)" classname="TestQuality.Elevator.Cabin.closeDoors">
+<system-out>
+Total Branches: 4
+Reached Branches: 4
+Percent of Reached Branches: 100
+Success: ok
+==PASSED==
+		</system-out>
+</testcase>
+<testcase name="Decision Coverage (DC)" classname="TestQuality.Elevator.Cabin.closeDoors">
+<system-out>
+Total Branches: 4
+Reached Branches: 4
+Percent of Reached Branches: 100
+Success: ok
+==PASSED==
+		</system-out>
+</testcase>
+<testcase name="Modified Condition / Decision Coverage (MC/DC)" classname="TestQuality.Elevator.Cabin.closeDoors">
+<system-out>
+Total Branches: 4
+Reached Branches: 4
+Percent of Reached Branches: 100
+Success: ok
+==PASSED==
+		</system-out>
+</testcase>
+<testcase name="Cyclomatic Complexity" classname="TestQuality.Elevator.Cabin.closeDoors">
+<system-out>
+Value: 3
+Result: ok
+==PASSED==
+		</system-out>
+</testcase>
+<testcase name="Result Significance" classname="TestQuality.Elevator.Cabin.closeDoors">
+<system-out>
+Value: true
+Result: ok
+==PASSED==
+		</system-out>
+</testcase>
+<testcase name="Ratio Test Coverage and Cyclomatic Complexity" classname="TestQuality.Elevator.Cabin.closeDoors">
+<system-out>
+Value: 1.00
+Result: ok
+==PASSED==
+		</system-out>
+</testcase>
+</testsuite>

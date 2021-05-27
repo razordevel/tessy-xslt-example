@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="TestQuality.Elevator.Cabin" timestamp="2021-05-26T10:00:54+0200">
+<testcase name="Statement Coverage (C0)" classname="TestQuality.Elevator.Cabin.closeDoors_notok">
+<error/>
+<system-out>
+Total Branches: 5
+Reached Branches: 5
+Percent of Reached Branches: 70
+Success: notok
+==FAILED==
+		</system-out>
+</testcase>
+<testcase name="Branch Coverage (C1)" classname="TestQuality.Elevator.Cabin.closeDoors_notok">
+<error/>
+<system-out>
+Total Branches: 4
+Reached Branches: 4
+Percent of Reached Branches: 80
+Success: notok
+==FAILED==
+		</system-out>
+</testcase>
+<testcase name="Decision Coverage (DC)" classname="TestQuality.Elevator.Cabin.closeDoors_notok">
+<error/>
+<system-out>
+Total Branches: 4
+Reached Branches: 4
+Percent of Reached Branches: 90
+Success: notok
+==FAILED==
+		</system-out>
+</testcase>
+<testcase name="Modified Condition / Decision Coverage (MC/DC)" classname="TestQuality.Elevator.Cabin.closeDoors_notok">
+<system-out>
+Total Branches: 4
+Reached Branches: 4
+Percent of Reached Branches: 100
+Success: ok
+==PASSED==
+		</system-out>
+</testcase>
+<testcase name="Cyclomatic Complexity" classname="TestQuality.Elevator.Cabin.closeDoors_notok">
+<error/>
+<system-out>
+Value: 3
+Result: notok
+==FAILED==
+		</system-out>
+</testcase>
+<testcase name="Result Significance" classname="TestQuality.Elevator.Cabin.closeDoors_notok">
+<error/>
+<system-out>
+Value: true
+Result: warning
+==PASSED==
+		</system-out>
+</testcase>
+<testcase name="Ratio Test Coverage and Cyclomatic Complexity" classname="TestQuality.Elevator.Cabin.closeDoors_notok">
+<error/>
+<system-out>
+Value: 0.40
+Result: notok
+==FAILED==
+		</system-out>
+</testcase>
+</testsuite>
