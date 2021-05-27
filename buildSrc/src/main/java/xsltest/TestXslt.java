@@ -40,6 +40,7 @@ public class TestXslt extends DefaultTask {
     private String             xsltName;
     private File               xslt;
     private File               outputDir;
+	private String             outputFileName = "output.xml";
     private File               testsFolder;
     private Transformer        transformer;
     private Map<Path, Diff>    differences              = new LinkedHashMap<>();
@@ -61,6 +62,14 @@ public class TestXslt extends DefaultTask {
             return "Tests the XSL transformation '" + xsltName+"'";
         }
         return getDescription();
+    }
+
+    public String getOutputFileName() {
+        return outputFileName;
+    }
+
+    public void setOutputFileName(String outputFileName) {
+        this.outputFileName = outputFileName;
     }
 
     @InputFile
@@ -112,7 +121,7 @@ public class TestXslt extends DefaultTask {
         return outputDir.toPath()
                         .resolve(inputRelativeToRootTestFolder)
                         .getParent()
-                        .resolve("output.xml")
+                        .resolve(getOutputFileName())
                         .toFile();
     }
 
@@ -170,9 +179,9 @@ public class TestXslt extends DefaultTask {
         } catch (IOException e) {
             throw new UncheckedIOException(e);
         }
-        Diff currentDiff = DiffBuilder.compare(Input.fromFile(output))
+        Diff currentDiff = DiffBuilder.compare(Input.fromFile(expectedXml))
                                       .normalizeWhitespace()
-                                      .withTest(Input.fromFile(expectedXml))
+                                      .withTest(Input.fromFile(output))
                                       .build();
 
         if (currentDiff.hasDifferences()) {
