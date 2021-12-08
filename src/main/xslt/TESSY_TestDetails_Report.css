@@ -109,7 +109,7 @@ table.ts tbody tr:hover {
 	display: none;
 }
 
-.hide:focus  ~ #failed_nav {
+.hide:focus  ~ .failed_nav {
 	display: none;
 }
 

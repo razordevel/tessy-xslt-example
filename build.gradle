@@ -13,6 +13,12 @@ task testDetail_TestQualityAnalysis(type: TestXslt) {
 	outputFileName = 'output.html'
 }
 
+
+task testDetail_TestDetails_Report_HTML(type: TestXslt) {
+    xsltName = 'TESSY_TestDetails_Report_HTML.xsl'
+	outputFileName = 'output.html'
+}
+
 task testDetail_TestQualityAnalysisJunit(type: TestXslt) {
     xsltName = 'TESSY_TestDetails_Report_TestQualityAnalysisJunit.xsl'
 }

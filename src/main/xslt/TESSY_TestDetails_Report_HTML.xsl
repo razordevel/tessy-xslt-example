@@ -4,13 +4,13 @@
 <!-- Renders a TESSY report as a test details report in HTML -->
 
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-  <xsl:output doctype-system="http://www.w3.org/TR/html4/strict.dtd" doctype-public="-//W3C//DTD HTML 4.01//EN"
-    method="html" version="4.0" indent="yes" media-type="text/html" />
+  <xsl:output doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" doctype-public="-//W3C//DTD XHTML 1.0 Strict//EN"
+    method="xml" version="1.0" indent="yes" media-type="text/xhtml" />
 
   <!-- Company logo shown in report header: for end user customization -->
-  <xsl:param name="your_company_logo_URL" select="'http://www.razorcat.com/bilder/logo_o_claim.gif'" />
+  <xsl:param name="your_company_logo_URL" select="'https://www.razorcat.com/files/theme/razorcat/images/logo2.png'" />
   <!-- Company CSS: for end user customization -->
-  <xsl:param name="your_company_CSS_URL" select="'../xsl/razorcat.css'" />
+  <xsl:param name="your_company_CSS_URL" select="'../xslt/TESSY_TestDetails_Report.css'" />
 
   <xsl:template match="/report">
     <html>
@@ -124,9 +124,9 @@
             </xsl:when>
             <xsl:otherwise>
               <xsl:value-of select="@notok" />
-              <a href="#" class="hide failed"> [hide]</a>
-              <a href="#" class="show failed"> [show]</a>
-              <div id="failed_nav">
+              <span class="hide failed" tabindex="0" >[hide]</span>
+              <span class="show failed" tabindex="0">[show]</span>
+              <div class="failed_nav">
                 <xsl:apply-templates select="/report/testobject/testcase/teststep"
                   mode="navi" />
               </div>
